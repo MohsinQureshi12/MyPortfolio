@@ -33,7 +33,7 @@ const PortfolioData = () => {
     <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A]  text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>
@@ -43,7 +43,7 @@ const PortfolioData = () => {
         <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A] text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>
@@ -52,7 +52,7 @@ const PortfolioData = () => {
         <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A] text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>
@@ -62,7 +62,7 @@ const PortfolioData = () => {
         <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A] text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>
@@ -71,7 +71,7 @@ const PortfolioData = () => {
         <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A] text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>
@@ -80,7 +80,7 @@ const PortfolioData = () => {
         <div className="p-6 rounded-lg shadow-lg h-[350px] border border-gray-300 rounded-md">
           <img src={Chowmil} alt="" className='h-[172px] mb-[10px] w-[360px]' />
 
-          <h3 className="text-xl font-semibold mb-1 text-[#df5f22] text-center mt-[18px]">Custom Development</h3>
+          <h3 className="text-xl font-semibold mb-1 text-[#0E315A] text-center mt-[18px]">Custom Development</h3>
           <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
           {/* <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
             <i className="fa-solid fa-arrow-right"></i>

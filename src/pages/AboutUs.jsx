@@ -16,7 +16,7 @@ const AboutUs = () => {
   }}
 >
   <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-  <div className="relative z-10 text-white text-[50px] font-bold "data-aos="flip-left"
+  <div className="relative z-10 text-[#0E315A] text-[50px] font-bold "data-aos="flip-left"
      data-aos-offset="200"
      data-aos-easing="ease-in-sine">
 About Us
@@ -31,7 +31,7 @@ About Us
 <div className='flex row justify-content mb-[80px]'>
 <div className='w-[500px] text-center mt-[80px]'>
 
-   <div className='text-[25px] text-center p-4 text-bold'>
+   <div className='text-[25px] text-center p-4 text-bold text-[#0E315A]'>
    <p>Perseverance, courage, and dedication are the essences 
     of an entrepreneurial mindset to achieve your SMART goals (Mohsin Qureshi, CEO)</p>
    </div>
@@ -50,10 +50,10 @@ About Us
   <div className='w-[1000px] h-[250px] flex flex-col md:flex-row items-center justify-between space-y md:space-y-0 md:space-x-4 relative bottom-[21%]'>
   <div className="text-center w-full md:w-[30%] h-[300px] border border-gray-200 shadow-lg p-4 rounded-lg flex flex-col bg-[#F5F5F8] ">
   <div className='flex justify-center items-center'>
-  <FaRecycle className='w-[60px] h-[40px] mb-[10px] mt-[10px]' />
+  <FaRecycle className='w-[60px] h-[40px] mb-[10px] mt-[10px] text-[#0E315A]' />
 </div>
-    <h1 className="text-[20px] font-bold text-[#FF6600] text-center">Core Values</h1>
-    <p className="text-center mt-[20px]">
+    <h1 className="text-[20px] font-bold text-[#0E315A] text-center">Core Values</h1>
+    <p className="text-center mt-[20px] text-[#0E315A]">
       Prioritize customer’s consent. Commitment and consistency. Take Ownership of personal accountability, where our employees possess the freedom and the courage to take initiatives. Aligned with your business goals.
     </p>
   </div>
@@ -61,10 +61,10 @@ About Us
   <div className="text-center w-full md:w-[30%] h-[300px] border border-gray-200 shadow-lg p-4 rounded-lg flex flex-col bg-[#F5F5F8] ">
 
   <div className='flex justify-center items-center '>
-  <PiUsersThreeFill className='w-[60px] h-[40px] mb-[10px] mt-[10px]' />
+  <PiUsersThreeFill className='w-[60px] h-[40px] mb-[10px] mt-[10px] text-[#0E315A]' />
 </div>
-    <h1 className="text-[20px] font-bold text-[#FF6600] text-center">Eco-Friendly Environment</h1>
-    <p className="text-center mt-[20px]">
+    <h1 className="text-[20px] font-bold text-[#0E315A] text-center">Eco-Friendly Environment</h1>
+    <p className="text-center mt-[20px] text-[#0E315A]">
     We have created an eco-friendly business environment. Since day one, we have been embracing eco-friendly technology. We aim for a paperless workplace and solar electricity.
     </p>
   </div>
@@ -72,10 +72,10 @@ About Us
   <div className="text-center w-full md:w-[30%] h-[300px] border border-gray-200 shadow-lg p-4 rounded-lg flex flex-col bg-[#F5F5F8] ">
     
   <div className='flex justify-center items-center '>
-  <FaHistory className='w-[60px] h-[40px] mb-[10px] mt-[10px]' />
+  <FaHistory className='w-[60px] h-[40px] mb-[10px] mt-[10px] text-[#0E315A]' />
 </div>
-    <h1 className="text-[20px] font-bold text-[#FF6600] text-center">Our Story</h1>
-    <p className="text-center mt-[20px]">
+    <h1 className="text-[20px] font-bold text-[#0E315A] text-center">Our Story</h1>
+    <p className="text-center mt-[20px] text-[#0E315A]">
       We perform the best practices to move the idea to the next level. We guarantee a 100% confidence level because we strongly believe in what Warren Buffet said, it takes 20 years to build a reputation and five minutes to ruin it.
     </p>
   </div>

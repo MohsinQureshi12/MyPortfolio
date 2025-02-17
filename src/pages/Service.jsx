@@ -41,7 +41,7 @@ const Service = () => {
   }, []);
   return (
     <div className="bg-gray-100 relative">
-      <div className="flex justify-start h-[300px] bg-[#c3422e] text-white p-10 relative">
+      <div className="flex justify-start h-[300px] bg-[#0E315A] text-white p-10 relative">
         <div className="w-full">
           <h2 className="text-4xl font-bold text-left">What We Do</h2>
           <div className="mt-3 h-[2px] bg-white w-[150px]"></div> {/* Underline */}
@@ -63,7 +63,7 @@ const Service = () => {
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart1} alt="" className='h-[80px] mb-[10px]' />
 
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Custom Development</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Custom Development</h3>
             <p className="text-gray-700">We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -71,7 +71,7 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart2} alt="" className='h-[80px] mb-[10px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Blockchain Development</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Blockchain Development</h3>
             <p className="text-gray-700">We design solutions like smart contracts, DEXs, DeFi, NFTs, gamification, etc., based on blockchain technology.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -79,7 +79,7 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart3} alt="" className='h-[80px] mb-[10px] w-[100px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Game Development</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Game Development</h3>
             <p className="text-gray-700">We develop pixel-perfect games with future-proof architecture and high resolution, using the latest technologies.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -87,7 +87,7 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px] ">
             <img src={ServiceCart4} alt="" className='h-[80px] mb-[10px] ' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Dedicated Teams</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Dedicated Teams</h3>
             <p className="text-gray-700">We provide dedicated resources and staff augmentation to enterprises worldwide for IT support and success.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -95,7 +95,7 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart5} alt="" className='h-[80px] mb-[10px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Cloud Services</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Cloud Services</h3>
             <p className="text-gray-700">We solve modern business challenges with a cloud-native approach towards enterprise-grade apps and services.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -103,7 +103,7 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart6} alt="" className='h-[80px] mb-[10px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Digital Marketing</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Digital Marketing</h3>
             <p className="text-gray-700">We craft, manage and publish interactive and engaging content to grow brands using data-driven strategies.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
@@ -111,15 +111,15 @@ const Service = () => {
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
             <img src={ServiceCart7} alt="" className='h-[80px] mb-[10px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">IT Consultancy</h3>
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">IT Consultancy</h3>
             <p className="text-gray-700">We craft, manage and publish interactive and engaging content to grow brands using data-driven strategies.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
             </div>
           </div>
           <div className="bg-white p-6 rounded-lg shadow-lg h-[300px]">
-            <img src={ServiceCart8} alt="" className='h-[80px] mb-[10px]' />
-            <h3 className="text-xl font-semibold mb-1 text-[#df5f22]">Trending Technologies</h3>
+            <img src={ServiceCart8} alt="" className='h-[80px] mb-[10px] text-[#0E315A]' />
+            <h3 className="text-xl font-semibold mb-1 text-[#0E315A]">Trending Technologies</h3>
             <p className="text-gray-700">We craft, manage and publish interactive and engaging content to grow brands using data-driven strategies.</p>
             <div className='border border-black rounded-full p-1 inline-flex items-center justify-center mt-[10px] ml-[210px]'>
               <i className="fa-solid fa-arrow-right"></i>
