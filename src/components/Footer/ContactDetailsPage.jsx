@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ContactPageBg from "../../assets/ContactPageBg.jpg";
 import logo from "../../assets/Sclogoone.svg";
 import {
@@ -7,6 +8,7 @@ import {
   FaLinkedin,
   FaTwitter,
 } from "react-icons/fa";
+import { CommonBtn } from "../../Constant/Button";
 
 const ContactDetailsPage = () => {
   return (
@@ -82,23 +84,151 @@ const ContactDetailsPage = () => {
 
     //     </div>
     // </section>
-    <section>
-      <div className="w-full flex flex-col items-center bg-black py-8 relative">
-        {/* Logo at the Top Center */}
-        <div className="flex justify-center">
-          <img
-            className="w-[192px] h-[100px] mb-10"
-            src={logo}
-            alt="Street Coders Logo"
-          />
+    // <section>
+    //   <div className="w-full flex flex-col items-center bg-black py-8 relative">
+    //     {/* Logo at the Top Center */}
+    //     <div className="flex justify-center">
+    //       <img
+    //         className="w-[192px] h-[100px] mb-10"
+    //         src={logo}
+    //         alt="Street Coders Logo"
+    //       />
+    //     </div>
+    //     {/* Main Content */}
+    //     <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-8">
+    //       {/* Company */}
+    //       <div className="flex flex-col text-center md:text-left">
+    //         <h1 className="text-white font-bold mb-2">Company</h1>
+    //         <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
+    //         <ul className="list-inside text-white mt-4 space-y-2">
+    //           {[
+    //             "Why Street Coders?",
+    //             "Careers",
+    //             "Hire Us",
+    //             "Products",
+    //             "Blog",
+    //             "Make Payment",
+    //             "Press Release",
+    //           ].map((item, index) => (
+    //             <li
+    //               key={index}
+    //               className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+    //             >
+    //               {item}
+    //               <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
+    //             </li>
+    //           ))}
+    //         </ul>
+    //       </div>
+
+    //       {/* Services */}
+    //       <div className="flex flex-col text-center md:text-left">
+    //         <h1 className="text-white font-bold mb-2">Services</h1>
+    //         <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
+    //         <ul className="list-inside text-white mt-4 space-y-2">
+    //           {[
+    //             "Web Development",
+    //             "Mobile App Development",
+    //             "Web & Graphics Designing",
+    //             "Search Engine Optimization",
+    //             "Desktop App Development",
+    //             "Digital Marketing",
+    //           ].map((item, index) => (
+    //             <li
+    //               key={index}
+    //               className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+    //             >
+    //               {item}
+    //               <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
+    //             </li>
+    //           ))}
+    //         </ul>
+    //       </div>
+
+    //       {/* Hire Dedicated Resources */}
+    //       <div className="flex flex-col text-center md:text-left">
+    //         <h2 className="text-white font-bold mb-2">
+    //           Hire Dedicated Resources
+    //         </h2>
+    //         <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
+    //         <ul className="list-inside text-white mt-4 space-y-2">
+    //           {[
+    //             ".Net Developer",
+    //             "Mobile Developer",
+    //             "PHP Developer",
+    //             "Front-End Developer",
+    //             "Web & Graphics Designer",
+    //             "Technical Resource Outsourcing",
+    //           ].map((item, index) => (
+    //             <li
+    //               key={index}
+    //               className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+    //             >
+    //               {item}
+    //               <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
+    //             </li>
+    //           ))}
+    //         </ul>
+    //       </div>
+
+    //       {/* Contact */}
+    //       <div className="flex flex-col text-center md:text-left">
+    //         <h2 className="text-white font-bold mb-2">Contact</h2>
+    //         <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
+    //         <ul className="list-inside text-white mt-4 space-y-2">
+    //           {[
+    //             "info@Scsolutions.com",
+    //             "+92.3074453612",
+    //             "Office # PCSIR Lahore",
+    //             "Punjab Society, Lahore Pakistan",
+    //             "Sharjah Media City",
+    //             "Copyright 2025 Street Coders",
+    //           ].map((item, index) => (
+    //             <li
+    //               key={index}
+    //               className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
+    //             >
+    //               {item}
+    //               <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
+    //             </li>
+    //           ))}
+    //         </ul>
+
+    //         {/* Contact Us Button */}
+    //         <div className="mt-6">
+    //           <a
+    //             href="/contact"
+    //             className="text-white py-2 px-4 rounded border border-white hover:bg-white hover:text-black transition"
+    //           >
+    //             Contact Us
+    //           </a>
+    //         </div>
+    //       </div>
+    //     </div>
+    //     <div className="mt-10 h-[2px] bg-white w-[1348px]"></div>{" "}
+    //     {/* Underline */}
+    //     <div className="flex justify-center md:justify-start mt-[24px] ml-11">
+    //       <FaFacebook className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+    //       <FaInstagram className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+    //       <FaYoutube className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+    //       <FaLinkedin className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+    //       <FaTwitter className="text-3xl text-[#364C62] cursor-pointer hover:text-blue-500" />
+    //     </div>
+    //   </div>
+    // </section>
+
+    <section className="w-full bg-black py-8">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-10 flex flex-col items-center">
+        <div className="flex justify-center mb-8">
+          <img className="w-32 h-auto" src={logo} alt="Street Coders Logo" />
         </div>
-        {/* Main Content */}
-        <div className="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 p-4 sm:p-8">
-          {/* Company */}
-          <div className="flex flex-col text-center md:text-left">
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8  md:text-left w-full">
+          <div>
             <h1 className="text-white font-bold mb-2">Company</h1>
-            <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
-            <ul className="list-inside text-white mt-4 space-y-2">
+            <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
+
+            <ul className="text-white mt-4 space-y-2">
               {[
                 "Why Street Coders?",
                 "Careers",
@@ -110,7 +240,7 @@ const ContactDetailsPage = () => {
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
                 >
                   {item}
                   <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
@@ -119,22 +249,22 @@ const ContactDetailsPage = () => {
             </ul>
           </div>
 
-          {/* Services */}
-          <div className="flex flex-col text-center md:text-left">
+          <div>
             <h1 className="text-white font-bold mb-2">Services</h1>
-            <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
-            <ul className="list-inside text-white mt-4 space-y-2">
+            <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
+
+            <ul className="text-white mt-4 space-y-2">
               {[
                 "Web Development",
                 "Mobile App Development",
                 "Web & Graphics Designing",
-                "Search Engine Optimization",
-                "Desktop App Development",
+                "SEO",
+                "Desktop Apps",
                 "Digital Marketing",
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
                 >
                   {item}
                   <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
@@ -143,24 +273,24 @@ const ContactDetailsPage = () => {
             </ul>
           </div>
 
-          {/* Hire Dedicated Resources */}
-          <div className="flex flex-col text-center md:text-left">
+          <div>
             <h2 className="text-white font-bold mb-2">
               Hire Dedicated Resources
             </h2>
-            <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
-            <ul className="list-inside text-white mt-4 space-y-2">
+            <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
+
+            <ul className="text-white mt-4 space-y-2">
               {[
                 ".Net Developer",
                 "Mobile Developer",
                 "PHP Developer",
                 "Front-End Developer",
                 "Web & Graphics Designer",
-                "Technical Resource Outsourcing",
+                "Technical Outsourcing",
               ].map((item, index) => (
                 <li
                   key={index}
-                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-200 group pb-1 w-max"
+                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
                 >
                   {item}
                   <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
@@ -169,18 +299,18 @@ const ContactDetailsPage = () => {
             </ul>
           </div>
 
-          {/* Contact */}
-          <div className="flex flex-col text-center md:text-left">
+          <div>
             <h2 className="text-white font-bold mb-2">Contact</h2>
-            <div className="h-[2px] bg-white w-32 mx-auto md:mx-0"></div>
-            <ul className="list-inside text-white mt-4 space-y-2">
+            <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
+
+            <ul className="text-white mt-4 space-y-2">
               {[
                 "info@Scsolutions.com",
                 "+92.3074453612",
-                "Office # PCSIR Lahore",
-                "Punjab Society, Lahore Pakistan",
+                "PCSIR Lahore",
+                "Punjab Society, Lahore",
                 "Sharjah Media City",
-                "Copyright 2025 Street Coders",
+                "© 2025 Street Coders",
               ].map((item, index) => (
                 <li
                   key={index}
@@ -192,25 +322,26 @@ const ContactDetailsPage = () => {
               ))}
             </ul>
 
-            {/* Contact Us Button */}
-            <div className="mt-6">
-              <a
+            <div className="mt-5">
+              <CommonBtn
+                className="text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition"
+                title="Contact Us"
                 href="/contact"
-                className="text-white py-2 px-4 rounded border border-white hover:bg-white hover:text-black transition"
-              >
-                Contact Us
-              </a>
+              />
+
+               
             </div>
           </div>
         </div>
-        <div className="mt-10 h-[2px] bg-white w-[1348px]"></div>{" "}
-        {/* Underline */}
-        <div className="flex justify-center md:justify-start mt-[24px] ml-11">
-          <FaFacebook className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
-          <FaInstagram className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
-          <FaYoutube className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
-          <FaLinkedin className="text-3xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
-          <FaTwitter className="text-3xl text-[#364C62] cursor-pointer hover:text-blue-500" />
+
+        <div className="w-full h-[2px] bg-white my-8"></div>
+
+        <div className="flex justify-center md:justify-start md:mt-6 mt-1 ">
+          <FaFacebook className="md:text-3xl text-xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+          <FaInstagram className="md:text-3xl text-xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+          <FaYoutube className="md:text-3xl text-xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+          <FaLinkedin className="md:text-3xl text-xl text-[#364C62] mr-2 cursor-pointer hover:text-blue-500" />
+          <FaTwitter className="md:text-3xl text-xl text-[#364C62] cursor-pointer hover:text-blue-500" />
         </div>
       </div>
     </section>

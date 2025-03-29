@@ -6,6 +6,7 @@ import ServicePage from "../components/ServicePage";
 // import PortfolioPage from '../components/PortfolioPage';
 import GamingPageContent from "../components/GamingPageContent";
 import WhoWeAre from "../components/WhoWeAre";
+import { CommonBtn } from "../Constant/Button";
 
 // import ContactDetailsPage from '../components/Footer/ContactDetailsPage';
 
@@ -65,7 +66,6 @@ const Home = () => {
             <source src="/videos/bgvideo.webm" type="video/webm" />
             Your browser does not support the video tag.
           </video>
-
           {/* Overlay (Dark Background) */}
           <div className="absolute top-0 left-0 w-full h-full bg-black/50"></div>
         </div>
@@ -78,19 +78,23 @@ const Home = () => {
                 Introducing new technology
               </p>
               <h1 className="text-white text-4xl md:text-5xl lg:text-6xl font-bold leading-tight md:leading-[70px] md:w-[493px]">
-                EASY <span className="text-[#0E315A]">DESIGN EASY</span> WEBSITE
+                EASY <span className="text-primary">DESIGN EASY</span> WEBSITE
               </h1>
               <p className="text-white text-base md:text-lg lg:text-xl font-normal md:font-medium mb-4 md:mb-8 pl-[4px]">
                 We Turn Ideas Into Reality
               </p>
               <div className="w-full max-w-[400px] flex flex-col md:flex-row mt-4 ml-2 md:ml-0">
-                <button className="md:mr-4 mb-2 md:mb-0 bg-[#0E315A] hover:bg-[#0E315A] text-white  py-2.5 px-8 rounded focus:outline-none focus:shadow-outline">
-                  Subscribe
-                </button>
-                <button className="bg-white  text-black text-[18px] py-2.5 px-8 rounded  focus:outline-none focus:shadow-outline">
-                  {/* hover:bg-[#FB5C46] */}
-                  Demo
-                </button>
+                <CommonBtn
+                  className="md:mr-4 mb-2 md:mb-0 bg-primary hover:bg-primary text-white  py-2.5 px-8 rounded focus:outline-none focus:shadow-outline"
+                  title=" Subscribe"
+                />
+
+                <CommonBtn
+                  className="bg-white  text-black text-[18px] py-2.5 px-8 rounded  focus:outline-none focus:shadow-outline"
+                  title="Demo"
+                />
+
+                {/* hover:bg-[#FB5C46] */}
               </div>
             </div>
           </div>

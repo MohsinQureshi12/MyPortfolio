@@ -6,7 +6,7 @@ import aboutUsImage2 from "../assets/aboutusimage2.jpg";
 import ourApproch from "../assets/ourApproch.jpeg";
 const AboutUs = () => {
   return (
-    <section>
+    <div className="">
       {/* <div
         className="w-full min-h-[600px] flex items-center justify-center relative mb-[20px]"
         style={{
@@ -47,11 +47,11 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="flex  min-h-screen">
+      <div className="flex mb-40 ">
         <div className=" container mx-auto px-4">
           <div className="flex justify-center flex-col md:flex-row">
             <div className="md:w-[500px] text-center mt-[80px]">
-              <div className="md:text-[25px] text-[14px] text-center p-4 text-bold text-[#0E315A]">
+              <div className="md:text-[25px] text-lg text-center p-4 text-bold text-[#0E315A]">
                 <p>
                   Perseverance, courage, and dedication are the essences of an
                   entrepreneurial mindset to achieve your SMART goals (Mohsin
@@ -70,7 +70,7 @@ const AboutUs = () => {
         </div>
       </div>
 
-      <div className="h-[300px] bg-[#F8F8F9]">
+      {/* <div className="h-[300px] bg-[#F8F8F9]">
         <div className="flex min-h-screen">
           <div className="mx-auto">
             <div className="w-[1000px] h-[250px] flex flex-col md:flex-row items-center justify-between space-y md:space-y-0 md:space-x-4 relative bottom-[21%]">
@@ -120,7 +120,99 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
+      </div> */}
+      {/* <div className="md:bg-[#F8F8F9] flex justify-center items-center py-16 h-auto   ">
+        <div className="w-full max-w-[1200px] px-4  ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+             <div className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white">
+              <FaRecycle className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">Core Values</h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                Prioritize customer’s consent. Commitment and consistency. Take
+                ownership of personal accountability, where our employees
+                possess the freedom and the courage to take initiatives. Aligned
+                with your business goals.
+              </p>
+            </div>
+
+             <div className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white">
+              <PiUsersThreeFill className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">
+                Eco-Friendly Environment
+              </h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                We have created an eco-friendly business environment. Since day
+                one, we have been embracing eco-friendly technology. We aim for
+                a paperless workplace and solar electricity.
+              </p>
+            </div>
+
+             <div className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white">
+              <FaHistory className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">Our Story</h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                We perform the best practices to move the idea to the next
+                level. We guarantee a 100% confidence level because we strongly
+                believe in what Warren Buffet said: it takes 20 years to build a
+                reputation and five minutes to ruin it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="bg-[#F8F8F9] flex justify-center items-center  py-16 ">
+        <div className="w-full max-w-[1200px] px-4  ">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {/* Core Values Card */}
+            <div
+              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
+                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
+            >
+              <FaRecycle className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">Core Values</h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                Prioritize customer’s consent. Commitment and consistency. Take
+                ownership of personal accountability, where our employees
+                possess the freedom and the courage to take initiatives. Aligned
+                with your business goals.
+              </p>
+            </div>
+
+            {/* Eco-Friendly Environment Card */}
+            <div
+              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
+                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
+            >
+              <PiUsersThreeFill className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">
+                Eco-Friendly Environment
+              </h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                We have created an eco-friendly business environment. Since day
+                one, we have been embracing eco-friendly technology. We aim for
+                a paperless workplace and solar electricity.
+              </p>
+            </div>
+
+            {/* Our Story Card */}
+            <div
+              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
+                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
+            >
+              <FaHistory className="w-12 h-12 mb-4 text-[#0E315A]" />
+              <h1 className="text-lg font-bold text-[#0E315A]">Our Story</h1>
+              <p className="text-sm text-[#0E315A] mt-2">
+                We perform the best practices to move the idea to the next
+                level. We guarantee a 100% confidence level because we strongly
+                believe in what Warren Buffet said: it takes 20 years to build a
+                reputation and five minutes to ruin it.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
+
+   
 
       {/* <div className="h-[700px] bg-black">
         <div className="flex min-h-screen">
@@ -258,48 +350,49 @@ const AboutUs = () => {
         </div>
       </div> */}
       <div className="h-auto bg-[#051B34] py-12">
-  <div className="flex min-h-screen items-center justify-center">
-    <div className="mx-auto px-4 w-full max-w-[1100px]">
-      <div className="text-white font-bold text-[30px] text-center h-[60px] mb-6">
-        <h1>Our Approach</h1>
-      </div>
+        <div className="flex min-h-screen items-center justify-center">
+          <div className="mx-auto px-4 w-full max-w-[1100px]">
+            <div className="text-white font-bold text-[30px] text-center h-[60px] mb-6">
+              <h1>Our Approach</h1>
+            </div>
 
-      <div className="flex flex-wrap items-center justify-center md:justify-between gap-6">
-        {/* Image Section */}
-        <div className="w-full md:w-[48%] flex justify-center">
-          <img
-            src={ourApproch}
-            alt="Our Approach"
-            className="h-auto max-h-[300px] w-full max-w-[500px] rounded-lg"
-          />
-        </div>
+            <div className="flex flex-wrap items-center justify-center md:justify-between gap-6">
+              {/* Image Section */}
+              <div className="w-full md:w-[48%] flex justify-center">
+                <img
+                  src={ourApproch}
+                  alt="Our Approach"
+                  className="h-auto max-h-[300px] w-full max-w-[500px] rounded-lg"
+                />
+              </div>
 
-        {/* Text Content */}
-        <div className="w-full md:w-[48%] text-center">
-          <div className="text-[16px] text-left text-white">
-            <p>
-              Street Coders Solutions Codility Solutions applies the
-              expertise acquired by years of experience dealing with
-              software development projects. Our strategic goal is to be
-              the leading provider of services and IT solutions. We
-              believe that integrity and authenticity build enduring
-              relationships. Our approach to growth derives from our
-              belief that the economic interest of the consumer is ours.
-              <br /><br />
-              In any engagement we pursue, we bring out a mix of our passion 
-              for new advanced technology and realistic business processes. 
-              We take responsibility from end to end in the event of complete 
-              lifecycle growth—research, design, development, testing, 
-              implementation, and integration of systems.
-            </p>
+              {/* Text Content */}
+              <div className="w-full md:w-[48%] text-center">
+                <div className="text-[16px] text-left text-white">
+                  <p>
+                    Street Coders Solutions Codility Solutions applies the
+                    expertise acquired by years of experience dealing with
+                    software development projects. Our strategic goal is to be
+                    the leading provider of services and IT solutions. We
+                    believe that integrity and authenticity build enduring
+                    relationships. Our approach to growth derives from our
+                    belief that the economic interest of the consumer is ours.
+                    <br />
+                    <br />
+                    In any engagement we pursue, we bring out a mix of our
+                    passion for new advanced technology and realistic business
+                    processes. We take responsibility from end to end in the
+                    event of complete lifecycle growth—research, design,
+                    development, testing, implementation, and integration of
+                    systems.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
-
-    </section>
   );
 };
 
