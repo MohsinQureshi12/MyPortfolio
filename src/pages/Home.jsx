@@ -7,6 +7,7 @@ import ServicePage from "../components/ServicePage";
 import GamingPageContent from "../components/GamingPageContent";
 import WhoWeAre from "../components/WhoWeAre";
 import { CommonBtn } from "../Constant/Button";
+import SliderComponent from "../components/Silder/CustomerReview";
 
 // import ContactDetailsPage from '../components/Footer/ContactDetailsPage';
 
@@ -112,6 +113,12 @@ const Home = () => {
       <AboutUs />
       <div className="mt-6 mb-6">
         <WhoWeAre />
+      </div>
+      <div className="md:mt-10 md:mb-20 my-8">
+      <div className="container mx-auto ">
+        <h1 className="md:text-4xl text-center mb-10 text-primary text-xl font-bold">Our Customer Review</h1>
+      </div>
+        <SliderComponent />
       </div>
       <ServicePage />
       {/* <PortfolioPage/> */}

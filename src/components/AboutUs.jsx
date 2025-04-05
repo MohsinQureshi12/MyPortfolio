@@ -19,12 +19,12 @@ const AboutUs = () => {
         </div>
 
         <div className="mb-6">
-          <h1 className="text-3xl font-bold text-[#0E315A] md:text-center text-center ">
+          <h1 className="text-3xl font-bold text-[#0E315A] md:text-center text-center  md:px-0 px-4">
             We provide end-to-end Design and Development Solutions
           </h1>
         </div>
         <div className="text-center mb-4">
-          <p className="text-[#0E315A]  md:w-[674px] w-[370px] ">
+          <p className="text-[#0E315A]  md:w-[674px] w-[370px] md:px-0 px-4">
             Our aim is to transform your business process for a digital future.
             We provide dedicated resources and staff augmentation to enterprises
             worldwide for IT support and success. Our diligent team of
@@ -37,7 +37,7 @@ const AboutUs = () => {
           <img src={ArrowLogo} alt="arrowlogo" className="w-8 h-20 mt-2" />
         </div>
 
-        <div className="w-full flex flex-wrap justify-center md:justify-start gap-6 md:p-0 p-4">
+        <div className="w-full flex flex-wrap justify-center lg:justify-start gap-6 md:p-0 p-4">
           {AboutPageList?.map((item, index) => (
             <div
               key={index}

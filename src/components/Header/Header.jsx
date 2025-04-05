@@ -1,7 +1,7 @@
-import { Link } from "react-router-dom";
+ 
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/Sclogo.svg";
-import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 
 const navLinks = [
   { path: "/", display: "Home" },
@@ -23,34 +23,41 @@ const Header = () => {
   const navigate = useNavigate();
   const [dropdownVisible, setDropdownVisible] = useState(null);
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleDropdown = (index) => {
     setDropdownVisible(dropdownVisible === index ? null : index);
   };
 
+  const closeAllDropdowns = () => {
+    setDropdownVisible(null);
+  };
+
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
+    closeAllDropdowns();
   };
+
+  // Auto close dropdown on outside click
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        closeAllDropdowns();
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
+
+  // Auto close sidebar on larger screens
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth >= 768) {
         setSidebarOpen(false);
       }
     };
-
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
-  useEffect(() => {
-    const handleClickOutside = (event) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
-        setActiveDropdown(null);
-        setActiveInnerDropdown(null);
-      }
-    };
-
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
@@ -58,9 +65,10 @@ const Header = () => {
       {/* Top Navbar */}
       <div className="w-full bg-black p-4">
         <div className="container mx-auto flex justify-between items-center">
-          {/* Logo (Center for Mobile, Left for Desktop) */}
-          <img className="w-[200px] " src={logo} alt="Logo" />
-          {/* Mobile Menu Button (Left) */}
+          {/* Logo */}
+          <img className="w-[200px]" src={logo} alt="Logo" />
+
+          {/* Mobile Menu Button */}
           <button
             className="md:hidden text-white text-2xl"
             onClick={toggleSidebar}
@@ -69,13 +77,13 @@ const Header = () => {
           </button>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex">
-            <ul className="flex">
+          <nav className="hidden md:flex" ref={dropdownRef}>
+            <ul className="flex items-center">
               {navLinks.map((link, index) => (
                 <li key={index} className="mx-4 text-white relative">
                   {link.dropdown ? (
                     <button
-                      className="text-white flex items-center gap-2 focus:outline-none"
+                      className="flex items-center gap-2 focus:outline-none"
                       onClick={() => toggleDropdown(index)}
                     >
                       {link.display}
@@ -85,6 +93,7 @@ const Header = () => {
                     <Link to={link.path}>{link.display}</Link>
                   )}
 
+                  {/* Dropdown Menu */}
                   {link.dropdown && dropdownVisible === index && (
                     <div className="absolute left-0 mt-2 w-40 bg-white text-black shadow-lg border rounded z-20">
                       <ul className="py-2">
@@ -92,10 +101,7 @@ const Header = () => {
                           <li
                             key={idx}
                             className="px-4 py-2 hover:bg-gray-200"
-                            onClick={() => {
-                              setActiveDropdown(null); // Close all dropdowns
-                              setActiveInnerDropdown(null);
-                            }}
+                            onClick={closeAllDropdowns}
                           >
                             <Link to={item.path}>{item.label}</Link>
                           </li>
@@ -108,9 +114,9 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Contact Button (Desktop Only) */}
+          {/* Desktop Contact Button */}
           <button
-            className="hidden md:block  py-3 px-6 bg-[#0E315A] border border-[#0E315A] rounded-md text-white"
+            className="hidden md:block py-3 px-6 bg-[#0E315A] border border-[#0E315A] rounded-md text-white"
             onClick={() => navigate("/contact")}
           >
             Contact
@@ -118,31 +124,20 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Sidebar (Mobile Navigation - Left Side) */}
+      {/* Sidebar (Mobile Navigation) */}
       <div
         className={`fixed top-0 left-0 h-full w-64 bg-black text-white transform ${
           sidebarOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-50 shadow-lg`}
       >
-        {/* Close Button */}
-        {/* <button
-          className="absolute top-4 right-4 text-2xl"
-          onClick={toggleSidebar}
-        >
-          <i className="fa-solid fa-xmark"></i>
-        </button> */}
         <div className="flex items-center justify-between px-4 py-4 border-b border-gray-700">
-          {/* Sidebar Logo */}
           <img className="w-[150px]" src={logo} alt="Sidebar Logo" />
-
-          {/* Close Button */}
           <button className="text-2xl" onClick={toggleSidebar}>
             <i className="fa-solid fa-xmark"></i>
           </button>
         </div>
 
-        {/* Scrollable Sidebar */}
-        <div className=" h-auto overflow-y-auto p-4">
+        <div className="h-auto overflow-y-auto p-4">
           <nav>
             <ul className="flex flex-col gap-4">
               {navLinks.map((link, index) => (
@@ -156,7 +151,13 @@ const Header = () => {
                       <i className="fa-solid fa-caret-down"></i>
                     </button>
                   ) : (
-                    <Link to={link.path} onClick={toggleSidebar}>
+                    <Link
+                      to={link.path}
+                      onClick={() => {
+                        toggleSidebar();
+                        closeAllDropdowns();
+                      }}
+                    >
                       {link.display}
                     </Link>
                   )}
@@ -166,10 +167,17 @@ const Header = () => {
                     <div className="mt-2 bg-gray-800 text-white rounded shadow-lg">
                       <ul className="py-2">
                         {link.dropdown.map((item, idx) => (
-                          <li key={idx} className="px-4 py-2 hover:bg-gray-700">
-                            <Link to={item.path} onClick={toggleSidebar}>
-                              {item.label}
-                            </Link>
+                        
+                          <li
+                           
+                            key={idx}
+                            className="px-4 py-2 hover:bg-gray-700"
+                            onClick={() => {
+                              toggleSidebar(); // Close sidebar
+                              closeAllDropdowns(); // Close dropdown
+                            }}
+                          >
+                            <Link to={item.path}>{item.label}</Link>
                           </li>
                         ))}
                       </ul>
