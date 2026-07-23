@@ -190,6 +190,7 @@ import ServiceCart5 from "../assets/cloud-computing.png";
 import ServiceCart6 from "../assets/digital-marketing.png";
 import ServiceCart7 from "../assets/It-consulting.png";
 import ServiceCart8 from "../assets/trending-tech.png";
+import CTASection from "../components/Home/CTAsection";
 
 const services = [
   {
@@ -276,7 +277,7 @@ const Service = () => {
       </div>
 
       {/* Service Cards Grid */}
-      <div className="py-12 px-6 sm:px-10 md:px-20">
+      <div className="py-32 px-6 sm:px-10 md:px-20">
         <div className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <div
@@ -301,6 +302,9 @@ const Service = () => {
             </div>
           ))}
         </div>
+      </div>
+      <div className="">
+        <CTASection />
       </div>
     </div>
   );

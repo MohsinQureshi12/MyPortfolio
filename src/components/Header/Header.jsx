@@ -66,7 +66,10 @@ const Header = () => {
       <div className="w-full bg-black p-4">
         <div className="container mx-auto flex justify-between items-center">
           {/* Logo */}
-          <img className="w-[200px]" src={logo} alt="Logo" />
+          
+          <img className="w-[200px] cursor-pointer" src={logo} alt="Logo"  onClick={() => {
+        window.location.href = "/";
+      }}/>
 
           {/* Mobile Menu Button */}
           <button
@@ -131,7 +134,9 @@ const Header = () => {
         } transition-transform duration-300 ease-in-out z-50 shadow-lg`}
       >
         <div className="flex items-center justify-between px-4 py-4 border-b border-gray-700">
-          <img className="w-[150px]" src={logo} alt="Sidebar Logo" />
+          <img className="w-[150px] cursor-pointer" src={logo} alt="Sidebar Logo"  onClick={() => {
+        window.location.href = "/";
+      }}/>
           <button className="text-2xl" onClick={toggleSidebar}>
             <i className="fa-solid fa-xmark"></i>
           </button>

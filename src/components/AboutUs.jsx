@@ -5,6 +5,7 @@ import WebDev from "../assets/icon2.png";
 import GameDev from "../assets/icon3.png";
 import BlockChainDev from "../assets/icon4.png";
 import { AboutPageList } from "../Constant/aboutPage";
+import CTASection from "./Home/CTAsection";
 
 const AboutUs = () => {
   return (
@@ -64,6 +65,7 @@ const AboutUs = () => {
             </div>
           ))}
         </div>
+       
       </div>
     </div>
   );

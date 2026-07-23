@@ -4,10 +4,12 @@ import sideImage from "../assets/img2.png";
 import AboutUs from "../components/AboutUs";
 import ServicePage from "../components/ServicePage";
 // import PortfolioPage from '../components/PortfolioPage';
-import GamingPageContent from "../components/GamingPageContent";
+// import GamingPageContent from "../components/GamingPageContent";
 import WhoWeAre from "../components/WhoWeAre";
 import { CommonBtn } from "../Constant/Button";
-import SliderComponent from "../components/Silder/CustomerReview";
+import Technology from "../components/Home/Technology";
+import TestimonialCarousel from "../components/Testimonal/index";
+import CTASection from "../components/Home/CTAsection";
 
 // import ContactDetailsPage from '../components/Footer/ContactDetailsPage';
 
@@ -111,16 +113,24 @@ const Home = () => {
       {/* hero section  */}
 
       <AboutUs />
-      <div className="mt-6 mb-6">
+      <div className="md:my-10 my-6 ">
         <WhoWeAre />
       </div>
       <div className="md:mt-10 md:mb-20 my-8">
-      <div className="container mx-auto ">
-        <h1 className="md:text-4xl text-center mb-10 text-primary text-xl font-bold">Our Customer Review</h1>
+        <div className="container mx-auto ">
+          <h1 className="md:text-4xl text-center  text-primary text-xl font-bold">
+            What are people saying?
+          </h1>
+        </div>
+        <TestimonialCarousel />
       </div>
-        <SliderComponent />
+      <div>
+        <Technology />
       </div>
-      <ServicePage />
+      <div className="  md:my-28 my-10">
+        <CTASection />
+      </div>
+      {/* <ServicePage /> */}
       {/* <PortfolioPage/> */}
       {/* <GamingPageContent/> */}
       {/* <ContactDetailsPage/> */}

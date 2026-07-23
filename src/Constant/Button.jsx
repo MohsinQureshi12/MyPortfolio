@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Arrowleft from "../assets/Icon/Arrowleft";
 
 export const ServiceBtn = ({ title, onClick }) => {
   return (
@@ -8,18 +9,19 @@ export const ServiceBtn = ({ title, onClick }) => {
     >
       {title}
       <div className="w-0 overflow-hidden group-hover:w-auto transition-all duration-300 ml-0 group-hover:ml-2">
-        <i className="fa-solid fa-arrow-right"></i>
+        {/* <i className="fa-solid fa-arrow-right"></i> */}
+        <Arrowleft/>
       </div>
     </button>
   );
 };
 
-export const CommonBtn = ({ className, href, title }) => {
+export const CommonBtn = ({ className, onClick, title  }) => {
   return (
     <>
-      <Link to={href} className={className}>
+      <button   className={className} onClick={onClick}>
         {title}
-      </Link>
+      </button>
     </>
   );
 };
