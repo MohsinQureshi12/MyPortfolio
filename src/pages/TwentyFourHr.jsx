@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { FaCheckCircle } from "react-icons/fa";
-import hireUsTwentyFourHrbg from "../assets/twentyhr.png";
-import PerHrImage from "../assets/perhr.webp";
+import hireUsTwentyFourHrbg from "../../public/assets/image/twentyhr.png";
+import PerHrImage from "../../public/assets/image/perhr.webp"; 
 
 const bulletPoints = [
   "Generate digital repair orders and invoices effortlessly with just one click",

@@ -3,9 +3,14 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
-      
+
       colors: {
         primary: "#0E315A",
+        grey:
+        {
+          light: "#6B7280",
+          dark: "#374151",
+        }
       },
 
       keyframes: {
@@ -30,7 +35,7 @@ export default {
         },
       };
 
-       addComponents(containerMax);
+      addComponents(containerMax);
     },
   ],
 };

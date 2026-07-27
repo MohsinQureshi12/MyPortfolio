@@ -9,21 +9,20 @@ const CTASection = () => {
 
   return (
     <section
-      className={`w-full ${
-        location.pathname === "/services" ? "py-32" : "py-20"
-      } bg-white text-center px-4`}
+      className={`w-full ${location.pathname === "/services" ? "py-32" : "lg:py-20 py-10"
+        } bg-primary/20 text-center px-4`}
     >
       {" "}
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-4">
-          How can we help you?
+          Let's build the next chapter of your enterprise.
         </h2>
         <p className="text-gray-600 text-base md:text-lg mb-8">
           Are you ready to push boundaries and explore new frontiers of
           innovation?
         </p>
         <CommonBtn
-          title="LET’S WORK TOGETHER"
+          title="Book a Consulation"
           className="bg-gradient-to-r from-primary to-gray-800 text-white font-medium px-6 py-3 rounded-md shadow hover:opacity-90 transition-all duration-200"
           onClick={() => navigate("/contact")}
         />

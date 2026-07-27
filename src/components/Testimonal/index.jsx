@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
-import StarIcon from "../../assets/Icon/star";
+import StarIcon from "../../../public/assets/Icon/star";
 import { Testimonials } from "../../Constant/CustomerReview";
 
 
@@ -58,7 +58,7 @@ const TestimonialCarousel = () => {
                       <StarIcon
                         key={item}
                         className="w-3 h-3"
-                        
+
                       />
                     );
                   })}

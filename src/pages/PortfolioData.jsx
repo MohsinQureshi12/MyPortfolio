@@ -1,5 +1,6 @@
-import PortfolioDataBg from "../assets/portofolioDataBG.svg";
-import Chowmil from "../assets/chowmill.jpg";
+import PortfolioDataBg from "../../public/assets/image/portofolioDataBG.svg";
+
+import Chowmil from "../../public/assets/image/chowmill.jpg";
 const PortfolioData = () => {
   return (
     <section>

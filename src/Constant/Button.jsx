@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import Arrowleft from "../assets/Icon/Arrowleft";
+import Arrowleft from "../../public/assets/Icon/Arrowleft";
 
 export const ServiceBtn = ({ title, onClick }) => {
   return (
@@ -16,12 +15,16 @@ export const ServiceBtn = ({ title, onClick }) => {
   );
 };
 
-export const CommonBtn = ({ className, onClick, title  }) => {
+export const CommonBtn = ({ className, onClick, title, disabled = false }) => {
   return (
-    <>
-      <button   className={className} onClick={onClick}>
-        {title}
-      </button>
-    </>
+    <button
+      className={className}
+      onClick={onClick}
+      disabled={disabled}
+      aria-disabled={disabled}
+      style={{ cursor: disabled ? 'not-allowed' : 'pointer', opacity: disabled ? 0.6 : 1 }}
+    >
+      {title}
+    </button>
   );
 };

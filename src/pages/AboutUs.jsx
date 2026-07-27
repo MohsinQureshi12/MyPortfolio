@@ -1,10 +1,10 @@
-import AboutUsBg from "../assets/AboutUsImage.svg";
+import AboutUsBg from "../../public/assets/image/AboutUsImage.svg";
 import { PiUsersThreeFill } from "react-icons/pi";
 import { FaRecycle } from "react-icons/fa";
 import { FaHistory } from "react-icons/fa";
-import aboutUsImage2 from "../assets/aboutusimage2.jpg";
-import ourApproch from "../assets/ourApproch.jpeg";
-import CTASection from "../components/Home/CTAsection";
+import aboutUsImage2 from "../../public/assets/image/aboutusimage2.jpg";
+import ourApproch from "../../public/assets/image/ourApproch.jpeg";
+import CTASection from "../components/home/ctasection";
 import AutoCounter from "../hooks/CounterSection";
 const AboutUs = () => {
   return (

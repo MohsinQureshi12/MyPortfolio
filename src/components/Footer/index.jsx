@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
-import logo from "../../assets/Sclogoone.svg";
+
+import logo from "../../../public/assets/image/Sclogoone.svg";
 import {
   FaFacebook,
   FaInstagram,

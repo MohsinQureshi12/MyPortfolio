@@ -1,6 +1,7 @@
 import React from "react";
 // import contactPageImage from '../assets/contactpage.jpg'
-import AboutUsBg from "../assets/AboutUsImage.svg";
+// import AboutUsBg from "../../assets/AboutUsImage.svg";
+import AboutUsBg from "../../public/assets/image/AboutUsImage.svg";
 const Contact = () => {
   return (
     <section>
@@ -46,76 +47,76 @@ const Contact = () => {
           </div>
         </div>
 
-       <div className="flex flex-col lg:flex-row justify-between h-auto lg:h-[700px] bg-[#0E315A] text-white p-6 lg:p-10 relative">
-  {/* Left Section - Text */}
-  <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-    <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-      Get A Response Today
-    </h2>
-    <div className="mt-3 h-[2px] bg-white w-[200px] sm:w-[300px] md:w-[400px] lg:w-[450px]"></div> {/* Underline */}
-    
-    <div className="w-full mt-6   flex flex-col">
-      <h2 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-6    mt-4">
-        CONTACT US
-      </h2>
-      
-      {/* Full Name & Phone Number */}
-      <div className="flex flex-col sm:flex-row gap-4">
-        <div className="w-full sm:w-1/2">
-          <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="fullname">
-            Full Name <span className="text-red-500">*</span>
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
-            id="fullname"
-            type="text"
-            placeholder="Enter your full name"
-            required
-          />
+        <div className="flex flex-col lg:flex-row justify-between h-auto lg:h-[700px] bg-[#0E315A] text-white p-6 lg:p-10 relative">
+          {/* Left Section - Text */}
+          <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
+            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
+              Get A Response Today
+            </h2>
+            <div className="mt-3 h-[2px] bg-white w-[200px] sm:w-[300px] md:w-[400px] lg:w-[450px]"></div> {/* Underline */}
+
+            <div className="w-full mt-6   flex flex-col">
+              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-6    mt-4">
+                CONTACT US
+              </h2>
+
+              {/* Full Name & Phone Number */}
+              <div className="flex flex-col sm:flex-row gap-4">
+                <div className="w-full sm:w-1/2">
+                  <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="fullname">
+                    Full Name <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    id="fullname"
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+
+                <div className="w-full sm:w-1/2">
+                  <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="phone">
+                    Contact Number <span className="text-red-500">*</span>
+                  </label>
+                  <input
+                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    id="phone"
+                    type="text"
+                    placeholder="Phone Number"
+                    required
+                  />
+                </div>
+              </div>
+
+              {/* Message */}
+              <div className="mt-4">
+                <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="message">
+                  Message <span className="text-red-500">*</span>
+                </label>
+                <textarea
+                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 h-[100px]"
+                  id="message"
+                  placeholder="Enter your message"
+                  required
+                ></textarea>
+              </div>
+
+              {/* Submit Button */}
+              <div className="flex justify-start mt-4">
+                <button
+                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"
+                  type="button"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Section - Image */}
+
         </div>
-
-        <div className="w-full sm:w-1/2">
-          <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="phone">
-            Contact Number <span className="text-red-500">*</span>
-          </label>
-          <input
-            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
-            id="phone"
-            type="text"
-            placeholder="Phone Number"
-            required
-          />
-        </div>
-      </div>
-
-      {/* Message */}
-      <div className="mt-4">
-        <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="message">
-          Message <span className="text-red-500">*</span>
-        </label>
-        <textarea
-          className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 h-[100px]"
-          id="message"
-          placeholder="Enter your message"
-          required
-        ></textarea>
-      </div>
-
-      {/* Submit Button */}
-      <div className="flex justify-start mt-4">
-        <button
-          className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"
-          type="button"
-        >
-          Submit
-        </button>
-      </div>
-    </div>
-  </div>
-
-  {/* Right Section - Image */}
- 
-</div>
 
       </div>
     </section>
