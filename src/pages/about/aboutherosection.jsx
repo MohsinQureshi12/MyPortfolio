@@ -1,37 +1,63 @@
-import AboutUsBg from "../../public/assets/image/AboutUsImage.svg";
-import { PiUsersThreeFill } from "react-icons/pi";
+// import AboutUsBg from "../../../../public/assets/image/aboutherosection.jpg";
+import AboutUsBg from "../../../public/assets/image/aboutherosection.jpg";
+
+// import { PiUsersThreeFill } from "react-icons/pi";
 import { FaRecycle } from "react-icons/fa";
 import { FaHistory } from "react-icons/fa";
-import aboutUsImage2 from "../../public/assets/image/aboutusimage2.jpg";
-import ourApproch from "../../public/assets/image/ourApproch.jpeg";
-import CTASection from "../components/home/ctasection";
-import AutoCounter from "../hooks/CounterSection";
-const AboutUs = () => {
+// import aboutUsImage2 from "../../../../public/assets/image/aboutusimage2.jpg";
+// import ourApproch from "../../../../public/assets/image/ourApproch.jpeg";
+// import CTASection from "../../components/home/ctasection";
+// import AutoCounter from "../../hooks/CounterSection";
+// import { CommonBtn } from "../../Constant/Button";
+export const Aboutherosection = () => {
   return (
     <div className="">
       <div
-        className="w-full min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-center justify-center relative mb-5"
+        className="w-full relative min-h-[400px] md:min-h-[500px] lg:min-h-[600px] flex items-start pt-10 md:pt-0 md:items-center mb-5"
         style={{
           backgroundImage: `url(${AboutUsBg})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/50"></div>
 
-        {/* Text */}
-        <div
-          className="relative z-10 text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-center"
-          data-aos="flip-left"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine"
-        >
-          About Us
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#1b2b45] via-[#1b2b45]/60 to-[#1b2b45]/40 md:via-[#1b2b45]/30"></div>
+
+
+        {/* Content */}
+        <div className="relative z-10 w-full max-w-7xl mx-auto px-4">
+
+          <div className="max-w-4xl flex flex-col items-center text-center md:items-start md:text-left">
+
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full border border-white/20 bg-white/10 backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
+
+              <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-white uppercase">
+                About StreetCoder
+              </span>
+            </div>
+
+
+            {/* Heading */}
+            <h1 className="text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl lg:leading-[72px]">
+              Empowering Pakistan through  - world class technology.
+            </h1>
+
+
+            {/* Description */}
+            <p className="mt-6 text-sm font-normal text-white md:text-base lg:text-lg">
+              A modern AI-powered software company building enterprise platforms for global operations.
+            </p>
+
+          </div>
+
         </div>
+
       </div>
 
-      <div className="flex md:mb-40 md:mt-32 my-20">
+      {/* <div className="flex md:mb-40 md:mt-32 my-20">
         <div className=" container mx-auto px-4">
           <div className="flex justify-center flex-col md:flex-row">
             <div className="md:w-[500px] text-center md:pt-20 pt-10">
@@ -52,61 +78,11 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="bg-[#F8F8F9] flex justify-center items-center  md:py-32  py-16">
-        <div className="w-full max-w-[1200px] px-4  ">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {/* Core Values Card */}
-            <div
-              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
-                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
-            >
-              <FaRecycle className="w-12 h-12 mb-4 text-[#0E315A]" />
-              <h1 className="text-lg font-bold text-[#0E315A]">Core Values</h1>
-              <p className="text-sm text-[#0E315A] mt-2">
-                Prioritize customer’s consent. Commitment and consistency. Take
-                ownership of personal accountability, where our employees
-                possess the freedom and the courage to take initiatives. Aligned
-                with your business goals.
-              </p>
-            </div>
+    
 
-            {/* Eco-Friendly Environment Card */}
-            <div
-              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
-                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
-            >
-              <PiUsersThreeFill className="w-12 h-12 mb-4 text-[#0E315A]" />
-              <h1 className="text-lg font-bold text-[#0E315A]">
-                Eco-Friendly Environment
-              </h1>
-              <p className="text-sm text-[#0E315A] mt-2">
-                We have created an eco-friendly business environment. Since day
-                one, we have been embracing eco-friendly technology. We aim for
-                a paperless workplace and solar electricity.
-              </p>
-            </div>
-
-            {/* Our Story Card */}
-            <div
-              className="text-center border border-gray-200 shadow-lg p-6 rounded-lg flex flex-col items-center bg-white 
-                          transition-transform duration-500 ease-in-out hover:scale-105 hover:-translate-y-2"
-            >
-              <FaHistory className="w-12 h-12 mb-4 text-[#0E315A]" />
-              <h1 className="text-lg font-bold text-[#0E315A]">Our Story</h1>
-              <p className="text-sm text-[#0E315A] mt-2">
-                We perform the best practices to move the idea to the next
-                level. We guarantee a 100% confidence level because we strongly
-                believe in what Warren Buffet said: it takes 20 years to build a
-                reputation and five minutes to ruin it.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div>
+      {/* <div>
         <section className="py-20 bg-gray-100 text-center md:py-32">
           <h2 className="text-3xl font-bold mb-10 text-primary">
             Our Achievements
@@ -118,8 +94,8 @@ const AboutUs = () => {
             <AutoCounter end={1000} suffix="+" title="Happy Clients" />
           </div>
         </section>
-      </div>
-      <div className="h-auto bg-black py-12">
+      </div> */}
+      {/* <div className="h-auto bg-black py-12">
         <div className="flex min-h-screen items-center justify-center">
           <div className="mx-auto px-4 w-full max-w-[1100px]">
             <div className="text-white font-bold text-[30px] text-center h-[60px] mb-6">
@@ -127,7 +103,7 @@ const AboutUs = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center md:justify-between gap-6">
-              {/* Text Content */}
+             
               <div className="w-full md:w-[48%] text-center">
                 <div className="text-[16px] text-left text-white">
                   <p>
@@ -151,7 +127,7 @@ const AboutUs = () => {
                 </div>
               </div>
 
-              {/* Image Section */}
+              
               <div className="w-full md:w-[48%] flex justify-center">
                 <img
                   src={aboutUsImage2}
@@ -162,9 +138,9 @@ const AboutUs = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
-      <div className="h-auto bg-[#051B34] py-12">
+      {/* <div className="h-auto bg-[#051B34] py-12">
         <div className="flex min-h-screen items-center justify-center">
           <div className="mx-auto px-4 w-full max-w-[1100px]">
             <div className="text-white font-bold text-[30px] text-center h-[60px] mb-6">
@@ -172,7 +148,7 @@ const AboutUs = () => {
             </div>
 
             <div className="flex flex-wrap items-center justify-center md:justify-between gap-6">
-              {/* Image Section */}
+
               <div className="w-full md:w-[48%] flex justify-center">
                 <img
                   src={ourApproch}
@@ -181,7 +157,7 @@ const AboutUs = () => {
                 />
               </div>
 
-              {/* Text Content */}
+
               <div className="w-full md:w-[48%] text-center">
                 <div className="text-[16px] text-left text-white">
                   <p>
@@ -209,9 +185,8 @@ const AboutUs = () => {
       </div>
       <div className="md:my-28 my-10 ">
         <CTASection />
-      </div>
+      </div> */}
     </div>
   );
 };
 
-export default AboutUs;

@@ -2,11 +2,11 @@ import { Route, Routes } from 'react-router-dom'
 //  import Service from'../pages/Service'
 import PortfolioData from '../pages/PortfolioData'
 import TechnologyPage from '../pages/TechnologyPage'
-import AboutUs from '../pages/AboutUs'
-import HireUs from '../pages/HireUs'
+ import HireUs from '../pages/HireUs'
 import TwentyFourHr from '../pages/TwentyFourHr'
 import Contact from '../pages/Contact'
 import Home from '../pages/home/index'
+import AboutPage from '../pages/about'
 
 const Routers = () => {
   return (
@@ -16,7 +16,7 @@ const Routers = () => {
         {/* <Route path='/services' element={<Service/>}/> */}
         <Route path='/portfolio-page' element={<PortfolioData />} />
         <Route path='/technology-page' element={<TechnologyPage />} />
-        <Route path='/about-page' element={<AboutUs />} />
+        <Route path='/about-page' element={<AboutPage />} />
         <Route path='/hire-web-dev' element={<HireUs />} />
         <Route path='/hire-mobile-dev' element={<TwentyFourHr />} />
         <Route path='/hire-ui-ux' element={<TwentyFourHr />} />
