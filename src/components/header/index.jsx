@@ -179,7 +179,7 @@ const Header = () => {
 
           {/* Desktop Contact Button */}
           <button
-            className="hidden md:block py-3 px-6 bg-[#0E315A] border border-[#0E315A] rounded-md text-white"
+            className="hidden md:block py-2 px-6 bg-[#0E315A] border border-[#0E315A] rounded-full text-white"
             onClick={() => navigate("/contact")}
           >
             Contact

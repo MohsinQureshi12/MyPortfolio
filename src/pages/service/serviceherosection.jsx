@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight, Plus } from 'lucide-react';
 import bgImage from '../../../public/assets/image/servicesherosection.jpg';
+import { Link } from 'react-router-dom';
  
 const ServiceHeroSection = () => {
     return (
@@ -35,10 +36,12 @@ const ServiceHeroSection = () => {
 
                 </div>
                 {/* CTA Button */}
-                <button className="bg-white text-[#0f172a] mt-4 hover:bg-gray-50 px-6 py-3.5 rounded-lg font-bold text-sm flex items-center gap-2 transition-all group shadow-xl">
-                    Talk to an architect
-                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                </button>
+                <Link to={"/contact"}>
+                    <button className="bg-white text-black mt-4 hover:bg-gray-50 px-6 py-3.5 rounded-lg font-bold text-sm flex items-center gap-2 transition-all group shadow-xl">
+                        Talk to an architect
+                        <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                    </button>
+                </Link>
 
                
 

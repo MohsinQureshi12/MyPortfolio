@@ -21,8 +21,8 @@ export function PortfolioproductComponent() {
                                 Live dashboards from real customer deployments.
                             </p>
                         </div>
-                        <Link to="/products" className="flex-shrink-0">
-                            <p className="flex items-center gap-2 text-primary font-bold hover:text-blue-700 transition-colors">
+                        <Link to="/product-page" className="flex-shrink-0">
+                            <p className="flex gap-2 items-center mt-4 text-primary lg:justify-start justify-center text-base">
                                 All products <ArrowRight size={18} />
                             </p>
                         </Link>

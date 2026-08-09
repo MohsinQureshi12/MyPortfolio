@@ -20,8 +20,8 @@ export const CapabilitiesCompoent = () => {
           <p className='text-primary font-bold text-sm lg:text-start text-center uppercase '>Capabilities</p>
           <div className="flex lg:justify-between item-end lg:flex-row flex-col "> <h1 className='lg:text-5xl text-2xl  font-bold lg:text-start text-center text-black  lg:w-[50%]'>End-to-end engineering for the modern enterprise.</h1>
 
-            <Link to="/">
-              <p className="flex gap-2 items-center mt-4 text-primary lg:justify-start justify-center text-base ">All services <ArrowRight className="mt-1" size={20} /></p>
+            <Link to="/service-page">
+              <p className="flex gap-2 items-center mt-4 text-primary lg:justify-start justify-center text-base ">All Services <ArrowRight className="mt-1" size={20} /></p>
             </Link>
 
           </div>

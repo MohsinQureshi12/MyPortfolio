@@ -23,7 +23,8 @@ const CTASection = () => {
         </p>
         <CommonBtn
           title="Book a Consulation"
-          className="bg-gradient-to-r from-primary to-gray-800 text-white font-medium px-6 py-3 rounded-md shadow hover:opacity-90 transition-all duration-200"
+          className="bg-primary text-white font-medium px-6 py-3 rounded-full shadow hover:opacity-90 transition-all duration-200"
+          // bg-gradient-to-r from-primary to-gray-800
           onClick={() => navigate("/contact")}
         />
       </div>

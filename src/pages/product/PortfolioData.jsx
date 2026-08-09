@@ -19,7 +19,7 @@ const PortfolioData = () => {
           {productsData?.map((product) => (
             <div
               key={product.id}
-              className="flex flex-col bg-white rounded-3xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-blue-50/50 overflow-hidden hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-shadow duration-300"
+              className="flex flex-col bg-white rounded-3xl shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] border border-blue-50/50 overflow-hidden hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-shadow duration-300 cursor-pointer"
             >
               {/* Card Image */}
               <div className="w-full h-56 md:h-64 overflow-hidden bg-gray-50 border-b border-gray-100">
@@ -32,7 +32,7 @@ const PortfolioData = () => {
 
               {/* Card Content */}
               <div className="p-8 flex flex-col flex-grow">
-                <span className="text-[#2563eb] font-bold text-[11px] tracking-wider uppercase mb-3">
+                <span className="text-primary font-bold text-[11px] tracking-wider uppercase mb-3">
                   {product.category}
                 </span>
                 <h3 className="text-[#0a192f] text-[22px] font-bold mb-3 tracking-tight">

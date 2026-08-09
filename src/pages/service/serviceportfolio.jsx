@@ -61,7 +61,7 @@ const ServicePortfolio = () => {
                                         <p className="text-blue-50/90 font-medium text-[15px] mb-6 leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500 delay-100">
                                             {item.desc}
                                         </p>
-                                        <Link to={"/contact"}> <button className="bg-white text-[#0f172a] hover:bg-gray-50 px-5 py-2.5 rounded-[12px] font-bold text-[14px] flex items-center gap-2 transition-all opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 duration-500 delay-150 shadow-lg">
+                                        <Link to={"/contact"}> <button className="bg-white text-[#0f172a] hover:bg-gray-50 px-5 py-2.5 rounded-full font-bold text-[14px] flex items-center gap-2 transition-all opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 duration-500 delay-150 shadow-lg">
                                             Explore service
                                             <ArrowRight size={18} className="transition-transform group-hover:translate-x-0.5" />
                                         </button>

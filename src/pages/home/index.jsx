@@ -52,13 +52,13 @@ const Home = () => {
               <div className="mt-8 flex flex-row justify-center gap-3">
                 <CommonBtn
                   onClick={() => navigate("/contact")}
-                  className="w-[150px] bg-primary py-3 text-white rounded-md"
+                  className="w-[160px] bg-primary py-3 text-white rounded-full"
                   title="Start Your Project"
                 />
 
                 <CommonBtn
                   onClick={() => navigate("/portfolio-page")}
-                  className="w-[150px] bg-white py-3 text-black rounded-md"
+                  className="w-[160px] bg-white py-3 text-black rounded-full"
                   title="View Our Work"
                 />
               </div>
