@@ -1,5 +1,5 @@
 
-import logo from "../../../public/assets/image/Sclogoone.svg";
+import logo from "../../../public/assets/image/Sclogo.svg";
 import {
   FaFacebook,
   FaInstagram,
@@ -12,9 +12,9 @@ import { CommonBtn } from "../../Constant/Button";
 const ContactDetailsPage = () => {
   return (
     <section className="w-full bg-black py-8">
-      <div className="container mx-auto px-4 sm:px-8 lg:px-4 flex flex-col items-center">
+      <div className="container mx-auto px-4 sm:px-8 lg:px-4 max-w-7xl flex flex-col items-center">
         <div className="flex justify-center mb-8">
-          <img className="w-32 h-auto" src={logo} alt="Street Coders Logo" />
+          <img className="w-32 h-14" src={logo} alt="Street Coders Logo" />
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4  md:text-left   w-full">
@@ -58,33 +58,6 @@ const ContactDetailsPage = () => {
               ))}
             </ul>
           </div>
-
-          {/* <div>
-            <h2 className="text-white font-bold mb-2">
-              Hire Dedicated Resources
-            </h2>
-            <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
-
-            <ul className="text-white mt-4 space-y-2">
-              {[
-                ".Net Developer",
-                "Mobile Developer",
-                "PHP Developer",
-                "Front-End Developer",
-                "Web & Graphics Designer",
-                "Technical Outsourcing",
-              ].map((item, index) => (
-                <li
-                  key={index}
-                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
-                >
-                  {item}
-                  <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
-                </li>
-              ))}
-            </ul>
-          </div> */}
-
           <div>
             <h2 className="text-white font-bold mb-2">Contact</h2>
             <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
@@ -102,14 +75,6 @@ const ContactDetailsPage = () => {
                 )
               )}
             </ul>
-
-            {/* <div className="mt-5">
-              <CommonBtn
-                className="text-white border border-white py-2 px-4 rounded hover:bg-white hover:text-black transition"
-                title="Contact Us"
-                href="/contact"
-              />
-            </div> */}
           </div>
           <div className=" ">
             <h1 className="text-white font-bold mb-2">Address</h1>
@@ -156,28 +121,28 @@ const ContactDetailsPage = () => {
         <div className="flex justify-center md:justify-start md:mt-6 mt-1 gap-4 ">
           <div className="   rounded flex items-center justify-center">
             <div className="border border-white hover:border-blue-500 p-3 rounded-full shadow-md">
-              <FaFacebook className="md:text-2xl text-xl text-[#364C62] cursor-pointer hover:text-blue-500" />
+              <FaFacebook className="md:text-2xl text-xl text-white cursor-pointer hover:text-blue-500" />
             </div>
           </div>
           <div className="   rounded flex items-center justify-center">
             <div className="border border-white hover:border-blue-500 p-3 rounded-full shadow-md">
-            <FaInstagram className="md:text-2xl text-xl text-[#364C62]   cursor-pointer hover:text-blue-500" />
+            <FaInstagram className="md:text-2xl text-xl text-white   cursor-pointer hover:text-blue-500" />
             </div>
           </div>
           <div className="   rounded flex items-center justify-center">
             <div className="border border-white hover:border-blue-500 p-3 rounded-full shadow-md">
-            <FaYoutube className="md:text-2xl text-xl text-[#364C62]  cursor-pointer hover:text-blue-500" />
+            <FaYoutube className="md:text-2xl text-xl text-white  cursor-pointer hover:text-blue-500" />
             </div>
           </div>
           
           <div className="   rounded flex items-center justify-center">
             <div className="border border-white hover:border-blue-500 p-3 rounded-full shadow-md">
-            <FaLinkedin className="md:text-2xl text-xl text-[#364C62]   cursor-pointer hover:text-blue-500" />
+            <FaLinkedin className="md:text-2xl text-xl text-white   cursor-pointer hover:text-blue-500" />
             </div>
           </div>
           <div className="   rounded flex items-center justify-center">
             <div className="border border-white hover:border-blue-500 p-3 rounded-full shadow-md">
-            <FaTwitter className="md:text-2xl text-xl text-[#364C62] cursor-pointer hover:text-blue-500" />
+            <FaTwitter className="md:text-2xl text-xl text-white cursor-pointer hover:text-blue-500" />
             </div>
           </div>
           

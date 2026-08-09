@@ -80,7 +80,7 @@ export const Aboutherosection = () => {
         </div>
       </div> */}
 
-    
+
 
       {/* <div>
         <section className="py-20 bg-gray-100 text-center md:py-32">

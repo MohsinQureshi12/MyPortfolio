@@ -7,23 +7,83 @@ import ServiceCart5 from "../../public/assets/image/cloud-computing.png";
 import ServiceCart6 from "../../public/assets/image/digital-marketing.png";
 import ServiceCart7 from "../../public/assets/image/It-consulting.png";
 import ServiceCart8 from "../../public/assets/image/trending-tech.png";
-import { Building2, Cpu, ShieldCheck, Globe } from "lucide-react";
+import img1 from "../../public/assets/image/ServicePageCart1.jpg";
+import img2 from "../../public/assets/image/ServicePageCart2.png";
+import img3 from "../../public/assets/image/ServicePageCart3.jpg"; 
+
+import {
+  Building2, ShieldCheck, Globe, Layers, Smartphone, Rocket,
+  Cloud, Database, Network, Building,
+  Cpu, Bot, Zap, LineChart,
+  Server, Infinity, CloudLightning, Shield
+} from "lucide-react";
+import { path } from "framer-motion/client";
 
 export const navLinks = [
   { path: "/", display: "Home" },
   { path: "/about-page", display: "About Us" },
-  { path: "/services", display: "Services" },
-  { path: "/portfolio-page", display: "Portfolio" },
   {
-    display: "Hire Us",
-    dropdown: [
-      { path: "/hire-web-dev", label: "Per Hour" },
-      { path: "/hire-mobile-dev", label: "Weekly Base" },
-      { path: "/hire-ui-ux", label: "Monthly Base" },
-    ],
+    display: "Services",
+    isMegaMenu: true,
+    path: "/service-page",
+    megaMenu: {
+      columns: [
+        {
+          title: "ENGINEERING",
+          items: [
+            { icon: Globe, label: "Website Development", desc: "Corporate & marketing sites engineered for performance.", path: "/service-page" },
+            { icon: Layers, label: "Web Applications", desc: "Complex SPAs and internal tools at scale.", path: "/service-page" },
+            { icon: Smartphone, label: "Mobile Apps", desc: "Native iOS and Android, cross-platform delivery.", path: "/service-page" },
+            { icon: Rocket, label: "MVP Development", desc: "Idea to launch-ready product in weeks.", path: "/service-page" }
+          ]
+        },
+        {
+          title: "PLATFORMS",
+          items: [
+            { icon: Cloud, label: "SaaS Development", desc: "Multi-tenant subscription platforms.", path: "/service-page" },
+            { icon: Database, label: "ERP Development", desc: "Finance, HR, inventory and operations unified.", path: "/service-page" },
+            { icon: Network, label: "CRM Development", desc: "Customer 360 with AI-assisted engagement.", path: "/service-page" },
+            { icon: Building, label: "Enterprise Software", desc: "Mission-critical platforms to global standards.", path: "/service-page" }
+          ]
+        },
+        {
+          title: "INTELLIGENCE",
+          items: [
+            { icon: Cpu, label: "AI Solutions", desc: "LLMs, vision, NLP for business outcomes.", path: "/service-page" },
+            { icon: Bot, label: "AI Agents", desc: "Autonomous agents for operations and support.", path: "/service-page" },
+            { icon: Zap, label: "Automation", desc: "RPA and workflow automation across stack.", path: "/service-page" },
+            { icon: LineChart, label: "Business Intelligence", desc: "Real-time analytics and decision dashboards.", path: "/service-page" }
+          ]
+        },
+        {
+          title: "CLOUD & DEVOPS",
+          items: [
+            { icon: Server, label: "Cloud Infrastructure", desc: "Architected for cost, security and uptime.", path: "/service-page" },
+            { icon: Infinity, label: "DevOps", desc: "CI/CD, IaC and zero-downtime releases.", path: "/service-page" },
+            { icon: CloudLightning, label: "AWS", desc: "Certified architecture and cost optimization.", path: "/service-page" },
+            { icon: Shield, label: "Azure", desc: "Enterprise Azure design and governance.", path: "/service-page" }
+          ]
+        }
+      ],
+      featured: {
+        title: "Enterprise AI Transformation",
+        desc: "End-to-end AI strategy, agents and automation tailored to your operations.",
+        path: "/service-page"
+      }
+    }
   },
-  { path: "/technology-page", display: "Technology" },
+  { path: "/product-page", display: "Products" },
+  // {
+  //   display: "Hire Us",
+  //   dropdown: [
+  //     { path: "/service-page", label: "Per Hour" },
+  //     { path: "/service-page", label: "Weekly Base" },
+  //     { path: "/service-page", label: "Monthly Base" },
+  //   ],
+  // },
+  // { path: "/technology-page", display: "Technology" },
 ];
+
 
 
 export const SERVERICE = [
@@ -141,3 +201,36 @@ export const chooseUsData = [
   },
 ];
 
+
+
+
+export const portfolioItems = [
+  { id: 1, title: 'Website Development', desc: 'Corporate & marketing sites engineered for performance.', image: img1 },
+  { id: 2, title: 'Mobile Applications', desc: 'Native iOS and Android, cross-platform delivery.', image: img2 },
+  { id: 3, title: 'MVP Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+];
+
+
+ export const productsData = [
+  {
+    id: 1,
+    category: 'F&B',
+    title: 'Restaurant ERP',
+    desc: 'Orders, kitchen display, inventory and franchise management.',
+    image: img1,
+  },
+  {
+    id: 2,
+    category: 'SECURITY',
+    title: 'Security Workforce ERP',
+    desc: 'Guard rostering, attendance, payroll and incident reporting.',
+    image: img2,
+  },
+  {
+    id: 3,
+    category: 'LOGISTICS',
+    title: 'Transportation ERP',
+    desc: 'Fleet, dispatch, tracking and freight billing.',
+    image: img3,
+  },
+];

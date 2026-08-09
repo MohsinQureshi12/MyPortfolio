@@ -1,12 +1,14 @@
 import { CommonBtn } from "../../Constant/Button";
 import Technology from "../../components/home/technology";
-import TestimonialCarousel from "../../components/testimonal/index";
 import { useNavigate } from "react-router-dom";
 import { CapabilitiesCompoent } from "../../components/home/capabilities";
 import CTASection from "../../components/home/ctasection";
 import { AboutComponent } from "../../components/about";
 import { PortfolioproductComponent } from "../../components/home/portfolioproduct";
 import { ChoseUsComponent } from "../../components/home/choseus";
+import AiInnovation from "../../components/home/aiinnvoation";
+import OurClients from "../../components/home/ourclients";
+import { HireUsComponent } from "../../components/home/hireus";
 
 const Home = () => {
   const navigate = useNavigate();
@@ -69,27 +71,13 @@ const Home = () => {
       <AboutComponent />
       <CapabilitiesCompoent />
       <PortfolioproductComponent />
+      <AiInnovation />
+      {/* <HireUsComponent /> */}
       <ChoseUsComponent />
-
-      <div>
-        <Technology />
-      </div>
-      <div className="lg:py-20 py-10">
-        <div className="container mx-auto ">
-          <h1 className="md:text-4xl text-center  text-primary text-xl font-bold">
-            What are people saying?
-          </h1>
-        </div>
-        <TestimonialCarousel />
-      </div>
-
+      <OurClients />
       <div className="">
         <CTASection />
       </div>
-      {/* <ServicePage /> */}
-      {/* <PortfolioPage/> */}
-      {/* <GamingPageContent/> */}
-      {/* <ContactDetailsPage/> */}
     </>
   );
 };

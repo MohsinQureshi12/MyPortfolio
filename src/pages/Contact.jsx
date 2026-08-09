@@ -1,125 +1,121 @@
 import React from "react";
-// import contactPageImage from '../assets/contactpage.jpg'
-// import AboutUsBg from "../../assets/AboutUsImage.svg";
-import AboutUsBg from "../../public/assets/image/AboutUsImage.svg";
+import { Send, MapPin, Mail, Phone, MessageSquare } from 'lucide-react';
+import ContactPageBg from "../../public/assets/image/buliding.jpg";
+
 const Contact = () => {
   return (
-    <section>
-      <div className="bg-gray-100 relative">
-        <div className="flex flex-col md:flex-row justify-between items-center bg-[#0E315A] text-white p-6 md:p-10 gap-8">
-          {/* Left Section - Text */}
-          <div className="w-full md:w-1/2">
-            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-left">
-              Get In Touch
-            </h2>
-            <div className="mt-3 h-[2px] bg-white w-[150px] md:w-[200px]"></div>
-
-            <div className="mt-4 text-base md:text-lg">
-              <p>
-                Transforming your business processes for the digital future.
-                <br />
-                Contact Us & You’ll Hear Back TODAY.
-              </p>
-            </div>
-
-            {/* Icons */}
-            <div className="flex space-x-4 mt-6">
-              {["fa-bars", "fa-envelope", "fa-skype", "fa-linkedin"].map(
-                (icon, index) => (
-                  <div
-                    key={index}
-                    className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center rounded-full border border-gray-400 hover:bg-white hover:text-[#0E315A] transition"
-                  >
-                    <i className={`fa-solid ${icon}`}></i>
-                  </div>
-                )
-              )}
-            </div>
+    <div className="bg-white min-h-screen font-sans pb-20">
+      {/* Hero Section */}
+      <section 
+        className="relative w-full pt-32 pb-40 px-6 lg:px-8 overflow-hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${ContactPageBg})` }}
+      >
+        {/* Transparent dark color overlay on top of the background image */}
+        <div className="absolute inset-0 bg-primary/70 pointer-events-none"></div>
+        {/* Soft bottom fade to blend into the gray background */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-white to-transparent z-10 pointer-events-none"></div>
+        
+        <div className="relative max-w-7xl mx-auto z-20">
+          <div className="inline-block px-3 py-1 mb-6 text-xs font-semibold tracking-wider text-white uppercase bg-white/10 rounded-full border border-gray-600/50 backdrop-blur-sm">
+            Contact
           </div>
-
-          {/* Right Section - Image */}
-          <div className="w-full md:w-1/2 flex justify-center md:justify-end">
-            <img
-              src={AboutUsBg}
-              alt="About Us"
-              className="w-full max-w-[400px] md:max-w-[500px] h-auto rounded-lg shadow-md object-cover"
-            />
-          </div>
+          <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 tracking-tight leading-tight max-w-2xl">
+            Let's build something <br /> exceptional.
+          </h1>
+          <p className="text-lg text-gray-300 max-w-xl leading-relaxed">
+            Reach our teams in Lahore and Ras Al Khaimah, or book a consultation with a solution architect.
+          </p>
         </div>
+      </section>
 
-        <div className="flex flex-col lg:flex-row justify-between h-auto lg:h-[700px] bg-[#0E315A] text-white p-6 lg:p-10 relative">
-          {/* Left Section - Text */}
-          <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold">
-              Get A Response Today
-            </h2>
-            <div className="mt-3 h-[2px] bg-white w-[200px] sm:w-[300px] md:w-[400px] lg:w-[450px]"></div> {/* Underline */}
-
-            <div className="w-full mt-6   flex flex-col">
-              <h2 className="text-white text-lg sm:text-xl md:text-2xl font-bold mb-6    mt-4">
-                CONTACT US
-              </h2>
-
-              {/* Full Name & Phone Number */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <div className="w-full sm:w-1/2">
-                  <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="fullname">
-                    Full Name <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    id="fullname"
-                    type="text"
-                    placeholder="Enter your full name"
-                    required
-                  />
+      {/* Main Content Area */}
+      <section className="relative max-w-7xl mx-auto px-6 lg:px-8 -mt-20 z-30">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+          
+          {/* Left Column - Form */}
+          <div className="lg:col-span-7 bg-white rounded-2xl shadow-xl shadow-gray-200/50 p-8 lg:p-10 border border-gray-100">
+            <h2 className="text-2xl font-bold text-black mb-2">Book a Consultation</h2>
+            <p className="text-grey-light mb-8 text-sm">Tell us about your project — we'll respond within one business day.</p>
+            
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label htmlFor="fullName" className="block text-xs font-semibold text-black">Full name</label>
+                  <input type="text" id="fullName" className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2  outline-none transition-all bg-transparent text-sm" />
                 </div>
-
-                <div className="w-full sm:w-1/2">
-                  <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="phone">
-                    Contact Number <span className="text-red-500">*</span>
-                  </label>
-                  <input
-                    className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    id="phone"
-                    type="text"
-                    placeholder="Phone Number"
-                    required
-                  />
+                <div className="space-y-2">
+                  <label htmlFor="email" className="block text-xs font-semibold text-black">Work email</label>
+                  <input type="email" id="email" className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2  outline-none transition-all bg-transparent text-sm" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="company" className="block text-xs font-semibold text-black">Company</label>
+                  <input type="text" id="company" className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2  outline-none transition-all bg-transparent text-sm" />
+                </div>
+                <div className="space-y-2">
+                  <label htmlFor="phone" className="block text-xs font-semibold text-black">Phone</label>
+                  <input type="tel" id="phone" className="w-full px-4 py-2.5 rounded-lg border border-gray-200 focus:ring-2  outline-none transition-all bg-transparent text-sm" />
                 </div>
               </div>
-
-              {/* Message */}
-              <div className="mt-4">
-                <label className="block text-white text-sm sm:text-base font-bold mb-1" htmlFor="message">
-                  Message <span className="text-red-500">*</span>
-                </label>
-                <textarea
-                  className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-blue-400 h-[100px]"
-                  id="message"
-                  placeholder="Enter your message"
-                  required
-                ></textarea>
+              <div className="space-y-2">
+                <label htmlFor="details" className="block text-xs font-semibold text-black">Project details</label>
+                <textarea id="details" rows={4} className="w-full px-4 py-3 rounded-lg border border-gray-200 focus:ring-2  outline-none transition-all bg-transparent resize-none text-sm"></textarea>
               </div>
+              <button type="button" className="w-full bg-primary hover:bg-primary text-white font-semibold py-3 px-6 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm shadow-md shadow-blue-500/20">
+                Send Message
+                <Send className="w-4 h-4" />
+              </button>
+            </form>
+          </div>
 
-              {/* Submit Button */}
-              <div className="flex justify-start mt-4">
-                <button
-                  className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded focus:outline-none focus:ring-2 focus:ring-blue-300"
-                  type="button"
-                >
-                  Submit
-                </button>
+          {/* Right Column - Info Cards */}
+          <div className="lg:col-span-5 space-y-4">
+            {/* Pakistan Office */}
+            {/* <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-[10px] font-bold text-blue-600 tracking-wider uppercase mb-1">Pakistan</div>
+              <h3 className="text-base font-bold text-gray-900 mb-3">Lahore Office</h3>
+              <div className="flex items-start gap-3 text-gray-500">
+                <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                <p className="text-sm leading-relaxed">
+                  Office #22, 2nd Floor, Big City Plaza, Liberty Roundabout, Gulberg, Lahore
+                </p>
+              </div>
+            </div> */}
+
+            {/* UAE Office */}
+            {/* <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm hover:shadow-md transition-shadow">
+              <div className="text-[10px] font-bold text-blue-600 tracking-wider uppercase mb-1">UAE</div>
+              <h3 className="text-base font-bold text-gray-900 mb-3">Ras Al Khaimah Office</h3>
+              <div className="flex items-start gap-3 text-gray-500">
+                <MapPin className="w-5 h-5 text-blue-500 shrink-0 mt-0.5" />
+                <p className="text-sm leading-relaxed">
+                  Building#08, Street#20-A, Al Qusaidat, Ras Al Khaima, UAE
+                </p>
+              </div>
+            </div> */}
+
+            {/* Direct Channels */}
+            <div className="bg-primary rounded-2xl p-6     text-white shadow-xl mt-4">
+              <h3 className="text-base font-bold mb-4">Direct channels</h3>
+              <div className="space-y-4">
+                <a href="mailto:pk@ventrextech.com" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                  <Mail className="w-4 h-4 text-white" />
+                  pk@ventrextech.com
+                </a>
+                <a href="tel:+923258831990" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                  <Phone className="w-4 h-4 text-white" />
+                  +92 325 883 1990
+                </a>
+                <a href="https://wa.me/923258831990" className="flex items-center gap-3 text-gray-300 hover:text-white transition-colors text-sm">
+                  <MessageSquare className="w-4 h-4 text-white" />
+                  WhatsApp: 923258831990
+                </a>
               </div>
             </div>
           </div>
 
-          {/* Right Section - Image */}
-
         </div>
-
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 
