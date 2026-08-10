@@ -7,10 +7,16 @@ import ServiceCart5 from "../../public/assets/image/cloud-computing.png";
 import ServiceCart6 from "../../public/assets/image/digital-marketing.png";
 import ServiceCart7 from "../../public/assets/image/It-consulting.png";
 import ServiceCart8 from "../../public/assets/image/trending-tech.png";
-import img1 from "../../public/assets/image/ServicePageCart1.jpg";
-import img2 from "../../public/assets/image/ServicePageCart2.png";
-import img3 from "../../public/assets/image/ServicePageCart3.jpg"; 
-
+import img1 from "../../public/assets/image/webiste.jpg";
+import img2 from "../../public/assets/image/mobile.jpg";
+import img3 from "../../public/assets/image/mvp.jpg";
+import img4 from "../../public/assets/image/bussiness.jpg";
+import img5 from "../../public/assets/image/enterprise.jpg";
+import img6 from "../../public/assets/image/saas.jpg";
+import img7 from "../../public/assets/image/erp.jpg";
+import img8 from "../../public/assets/image/saas.jpg";
+import img9 from "../../public/assets/image/ai.jpg";
+ 
 import {
   Building2, ShieldCheck, Globe, Layers, Smartphone, Rocket,
   Cloud, Database, Network, Building,
@@ -52,7 +58,7 @@ export const navLinks = [
             { icon: Cpu, label: "AI Solutions", desc: "LLMs, vision, NLP for business outcomes.", path: "/service-page" },
             { icon: Bot, label: "AI Agents", desc: "Autonomous agents for operations and support.", path: "/service-page" },
             { icon: Zap, label: "Automation", desc: "RPA and workflow automation across stack.", path: "/service-page" },
-            { icon: LineChart, label: "Business Intelligence", desc: "Real-time analytics and decision dashboards.", path: "/service-page" }
+            // { icon: LineChart, label: "Business Intelligence", desc: "Real-time analytics and decision dashboards.", path: "/service-page" }
           ]
         },
         {
@@ -207,11 +213,21 @@ export const chooseUsData = [
 export const portfolioItems = [
   { id: 1, title: 'Website Development', desc: 'Corporate & marketing sites engineered for performance.', image: img1 },
   { id: 2, title: 'Mobile Applications', desc: 'Native iOS and Android, cross-platform delivery.', image: img2 },
-  { id: 3, title: 'MVP Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+  { id: 3, title: 'MVP Development', desc: 'Native iOS and Android, cross-platform delivery.', image: img3 },
+  { id: 4, title: 'Business Development', desc: 'Corporate & marketing sites engineered for performance.', image: img4 },
+  { id: 5, title: 'Enterprise Software', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img5 },
+  { id: 6, title: 'SaaS Platform', desc: 'Corporate & marketing sites engineered for performance.', image: img6 },
+  { id: 7, title: 'ERP Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img7 },
+  { id: 8, title: 'CRM Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img8 },
+  { id: 9, title: 'AI Solutions', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img9 },
+  { id: 10, title: 'Cloud Engineering', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+  { id: 11, title: 'DevOps', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+  { id: 12, title: 'Digital Transformation', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+
 ];
 
 
- export const productsData = [
+export const productsData = [
   {
     id: 1,
     category: 'F&B',
