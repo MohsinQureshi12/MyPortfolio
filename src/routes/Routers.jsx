@@ -6,7 +6,7 @@ import TwentyFourHr from '../pages/TwentyFourHr'
 import Contact from '../pages/Contact'
 import Home from '../pages/home/index'
 import AboutPage from '../pages/about'
-import ServicesPage from '../pages/service'
+import ServicesPage from '../pages/service/index'
 import ProductPage from '../pages/product'
 
 const Routers = () => {
