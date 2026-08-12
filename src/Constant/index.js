@@ -13,10 +13,13 @@ import img3 from "../../public/assets/image/mvp.jpg";
 import img4 from "../../public/assets/image/bussiness.jpg";
 import img5 from "../../public/assets/image/enterprise.jpg";
 import img6 from "../../public/assets/image/saas.jpg";
-import img7 from "../../public/assets/image/erp.jpg";
-import img8 from "../../public/assets/image/saas.jpg";
+import img7 from "../../public/assets/image/data science.jpg";
+import img8 from "../../public/assets/image/digital.jpg";
 import img9 from "../../public/assets/image/ai.jpg";
- 
+import img10 from "../../public/assets/image/cloud.jpg";
+import img11 from "../../public/assets/image/erp.jpg";
+import img12 from "../../public/assets/image/seo.jpg";
+
 import {
   Building2, ShieldCheck, Globe, Layers, Smartphone, Rocket,
   Cloud, Database, Network, Building,
@@ -40,7 +43,7 @@ export const navLinks = [
             { icon: Globe, label: "Website Development", desc: "Corporate & marketing sites engineered for performance.", path: "/service-page" },
             { icon: Layers, label: "Web Applications", desc: "Complex SPAs and internal tools at scale.", path: "/service-page" },
             { icon: Smartphone, label: "Mobile Apps", desc: "Native iOS and Android, cross-platform delivery.", path: "/service-page" },
-            { icon: Rocket, label: "MVP Development", desc: "Idea to launch-ready product in weeks.", path: "/service-page" }
+            { icon: Rocket, label: "Digital transformation", desc: "Idea to launch-ready product in weeks.", path: "/service-page" }
           ]
         },
         {
@@ -49,8 +52,7 @@ export const navLinks = [
             { icon: Cloud, label: "SaaS Development", desc: "Multi-tenant subscription platforms.", path: "/service-page" },
             { icon: Database, label: "ERP Development", desc: "Finance, HR, inventory and operations unified.", path: "/service-page" },
             { icon: Network, label: "CRM Development", desc: "Customer 360 with AI-assisted engagement.", path: "/service-page" },
-            { icon: Building, label: "Enterprise Software", desc: "Mission-critical platforms to global standards.", path: "/service-page" }
-          ]
+            { icon: Rocket, label: "MVP Development", desc: "Idea to launch-ready product in weeks.", path: "/service-page" }]
         },
         {
           title: "INTELLIGENCE",
@@ -58,14 +60,14 @@ export const navLinks = [
             { icon: Cpu, label: "AI Solutions", desc: "LLMs, vision, NLP for business outcomes.", path: "/service-page" },
             { icon: Bot, label: "AI Agents", desc: "Autonomous agents for operations and support.", path: "/service-page" },
             { icon: Zap, label: "Automation", desc: "RPA and workflow automation across stack.", path: "/service-page" },
-            // { icon: LineChart, label: "Business Intelligence", desc: "Real-time analytics and decision dashboards.", path: "/service-page" }
+            { icon: LineChart, label: "ML & Data Science", desc: "Real-time analytics and decision dashboards.", path: "/service-page" }
           ]
         },
         {
           title: "CLOUD & DEVOPS",
           items: [
             { icon: Server, label: "Cloud Infrastructure", desc: "Architected for cost, security and uptime.", path: "/service-page" },
-            { icon: Infinity, label: "DevOps", desc: "CI/CD, IaC and zero-downtime releases.", path: "/service-page" },
+            { icon: Infinity, label: "POwer PI", desc: "CI/CD, IaC and zero-downtime releases.", path: "/service-page" },
             { icon: CloudLightning, label: "AWS", desc: "Certified architecture and cost optimization.", path: "/service-page" },
             { icon: Shield, label: "Azure", desc: "Enterprise Azure design and governance.", path: "/service-page" }
           ]
@@ -211,18 +213,20 @@ export const chooseUsData = [
 
 
 export const portfolioItems = [
-  { id: 1, title: 'Website Development', desc: 'Corporate & marketing sites engineered for performance.', image: img1 },
-  { id: 2, title: 'Mobile Applications', desc: 'Native iOS and Android, cross-platform delivery.', image: img2 },
-  { id: 3, title: 'MVP Development', desc: 'Native iOS and Android, cross-platform delivery.', image: img3 },
-  { id: 4, title: 'Business Development', desc: 'Corporate & marketing sites engineered for performance.', image: img4 },
-  { id: 5, title: 'Enterprise Software', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img5 },
-  { id: 6, title: 'SaaS Platform', desc: 'Corporate & marketing sites engineered for performance.', image: img6 },
-  { id: 7, title: 'ERP Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img7 },
-  { id: 8, title: 'CRM Development', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img8 },
-  { id: 9, title: 'AI Solutions', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img9 },
-  { id: 10, title: 'Cloud Engineering', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
-  { id: 11, title: 'DevOps', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
-  { id: 12, title: 'Digital Transformation', desc: 'From concept to launch-ready product in weeks, not quarters.', image: img3 },
+  { id: 1, title: 'Website Development', desc: 'High-performance websites built for speed, scalability, SEO, and exceptional user experiences.', image: img1 },
+  { id: 2, title: 'Mobile Applications', desc: 'Scalable mobile applications for iOS and Android, built with seamless experiences and reliable performance.', image: img2 },
+  { id: 3, title: 'AI / ML Solutions', desc: 'Intelligent AI and machine learning solutions that automate processes, enhance decisions, and unlock new business opportunities.', image: img9 },
+
+  { id: 4, title: 'Data Science', desc: 'Turn complex business data into actionable insights with advanced analytics, machine learning, and data-driven solutions.', image: img7 },
+  { id: 5, title: 'Power PI', desc: 'Transform business data into interactive Power BI dashboards that reveal trends, track performance, and support smarter decisions.', image: img5 },
+  { id: 6, title: 'Cloud Engineering', desc: 'Secure and scalable cloud infrastructure designed for high availability, performance, flexibility, and long-term growth.', image: img10 },
+  { id: 7, title: 'MVP Development', desc: 'Validate your idea faster with launch-ready MVPs built to test, learn, and scale with your market.', image: img3 },
+  { id: 8, title: 'SaaS Platform', desc: 'Build scalable SaaS platforms with secure architecture, intuitive experiences, and infrastructure designed for growing users.', image: img6 },
+  { id: 9, title: 'CRM / ERP Development', desc: 'Custom CRM and ERP systems that streamline operations, centralize data, and improve business efficiency.', image: img11 },
+  { id: 10, title: 'Business Development', desc: 'Custom digital solutions designed to solve complex business challenges, optimize workflows, and improve operational efficiency.', image: img4 },
+  { id: 11, title: 'Digital Transformation', desc: 'Modernize your business with intelligent technology, automated workflows, and scalable digital systems.', image: img8 },
+  { id: 12, title: 'SEO', desc: 'Data-driven SEO strategies that improve search visibility, attract qualified traffic, and support sustainable online growth.', image: img12 },
+
 
 ];
 

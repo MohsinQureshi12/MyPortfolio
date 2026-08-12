@@ -12,8 +12,8 @@ export default function Leadership() {
           <p className="text-primary font-bold tracking-widest text-[10px] md:text-xs uppercase mb-4">
             Leadership
           </p>
-          <h2 className="text-3xl md:text-5xl font-bold text-primary tracking-tight leading-tight">
-            Messages from our <br className="hidden md:block" /> leadership.
+          <h2 className="lg:text-3xl text-lg font-bold text-black tracking-tight leading-tight">
+            Messages from our   leadership.
           </h2>
         </div>
 
@@ -42,7 +42,7 @@ export default function Leadership() {
           <div className="w-full lg:w-7/12 flex flex-col justify-center">
             <Sparkles className="w-8 h-8 text-primary mb-6" strokeWidth={1.5} />
             
-            <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold text-black text-start leading-snug mb-6">
+            <h3 className="text-lg lg:text-3xl font-semibold text-primary text-start leading-snug mb-6">
               "Technology is shaping the future of nations, businesses and communities. Pakistan has the potential to emerge as a strong and self-reliant force in the global digital economy."
             </h3>
             

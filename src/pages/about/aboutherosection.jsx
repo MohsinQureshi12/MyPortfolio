@@ -1,14 +1,5 @@
-// import AboutUsBg from "../../../../public/assets/image/aboutherosection.jpg";
 import AboutUsBg from "../../../public/assets/image/aboutherosection.jpg";
 
-// import { PiUsersThreeFill } from "react-icons/pi";
-import { FaRecycle } from "react-icons/fa";
-import { FaHistory } from "react-icons/fa";
-// import aboutUsImage2 from "../../../../public/assets/image/aboutusimage2.jpg";
-// import ourApproch from "../../../../public/assets/image/ourApproch.jpeg";
-// import CTASection from "../../components/home/ctasection";
-// import AutoCounter from "../../hooks/CounterSection";
-// import { CommonBtn } from "../../Constant/Button";
 export const Aboutherosection = () => {
   return (
     <div className="">
@@ -35,21 +26,20 @@ export const Aboutherosection = () => {
               <span className="w-1.5 h-1.5 rounded-full bg-blue-400"></span>
 
               <span className="text-[10px] sm:text-xs font-semibold tracking-widest text-white uppercase">
-                About StreetCoder
+                About Street Coder
               </span>
             </div>
 
 
             {/* Heading */}
-            <h1 className="text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl lg:leading-[72px]">
-              Empowering Pakistan through  - world class technology.
+            <h1 className="lg:text-5xl text-lg font-bold leading-tight text-white  lg:leading-[60px]">
+              Building World-Class Technology for a Smarter, Connected World.
             </h1>
 
 
             {/* Description */}
             <p className="mt-6 text-sm font-normal text-white md:text-base lg:text-lg">
-              A modern AI-powered software company building enterprise platforms for global operations.
-            </p>
+              Street Coder is a global AI-powered software company delivering intelligent solutions, custom software, and scalable digital platforms for businesses across Australia, the UK, Pakistan, and beyond.            </p>
 
           </div>
 

@@ -14,10 +14,10 @@ const CTASection = () => {
     >
       {" "}
       <div className="max-w-3xl mx-auto">
-        <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-4">
+        <h2 className="lg:text-3xl text-lg font-semibold text-gray-900 mb-4">
           Let's build the next chapter of your enterprise.
         </h2>
-        <p className="text-gray-600 text-base md:text-lg mb-8">
+        <p className="text-gray-600 text-sm md:text-base mb-8">
           Are you ready to push boundaries and explore new frontiers of
           innovation?
         </p>

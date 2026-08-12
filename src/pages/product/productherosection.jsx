@@ -24,7 +24,7 @@ const ProductHeroSection = () => {
 
 
                     {/* Heading */}
-                    <h1 className="text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl lg:leading-[72px]">
+                    <h1 className="lg:text-5xl text-lg font-bold leading-tight text-white   lg:leading-[72px]">
                         Production-ready platforms shipped from day one.
                     </h1>
 

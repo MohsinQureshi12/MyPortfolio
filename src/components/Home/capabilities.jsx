@@ -18,10 +18,11 @@ export const CapabilitiesCompoent = () => {
         {/*   flex flex-col items-center md:py-16 mt-2 */}
         <div >
           <p className='text-primary font-bold text-sm lg:text-start text-center uppercase '>Capabilities</p>
-          <div className="flex lg:justify-between item-end lg:flex-row flex-col "> <h1 className='lg:text-5xl text-2xl  font-bold lg:text-start text-center text-black  lg:w-[50%]'>End-to-end engineering for the modern enterprise.</h1>
+          <div className="flex lg:justify-between item-end lg:flex-row flex-col "> 
+            <h1 className='lg:text-3xl text-lg  font-bold lg:text-start text-center text-black  lg:w-[50%]'>End-to-end engineering for the modern enterprise.</h1>
 
             <Link to="/service-page">
-              <p className="flex gap-2 items-center mt-4 text-primary lg:justify-start justify-center text-base ">All Services <ArrowRight className="mt-1" size={20} /></p>
+              <p className="flex gap-2 items-center mt-4 text-primary lg:justify-around justify-center text-base w-36 border border-primary rounded-full p-3">All Services <ArrowRight className="mt-1" size={20} /></p>
             </Link>
 
           </div>
@@ -48,7 +49,7 @@ export const CapabilitiesCompoent = () => {
               <h1 className="text-xl font-bold text-gray-900 mb-3">
                 {item?.title}
               </h1>
-              <p className="text-[15px] text-gray-500 leading-relaxed">
+              <p className="text-sm text-gray-500 leading-relaxed">
                 {item?.desc}
               </p>
             </div>

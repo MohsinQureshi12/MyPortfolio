@@ -20,16 +20,15 @@ const AiInnovation = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-8 items-center">
 
           {/* Left Content */}
-          <div className="max-w-xl">
+          <div className="">
             <h3 className="text-white font-bold tracking-wider text-sm uppercase mb-4">
               AI Innovation
             </h3>
-            <h2 className="text-4xl lg:text-5xl font-bold text-white leading-tight mb-6">
-              Intelligence built into <br className="hidden lg:block" /> every layer of your <br className="hidden lg:block" /> enterprise.
+            <h2 className="lg:text-3xl text-lg font-bold text-white leading-tight mb-6">
+              Turning Artificial Intelligence  <br className="hidden lg:block" />  Into Real Business Impact.
             </h2>
             <p className="text-white lg:text-base text-sm   mb-10 leading-relaxed ">
-              From LLM-powered agents and computer vision to predictive analytics and automation, we embed AI where it drives measurable business outcomes.
-            </p>
+              We build AI-powered solutions using intelligent automation, machine learning, LLMs, computer vision, and predictive analytics to help businesses improve efficiency, make smarter decisions, and unlock new opportunities.            </p>
 
             {/* Features Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-10">
@@ -45,7 +44,7 @@ const AiInnovation = () => {
             </div>
 
             {/* CTA Link */}
-            <Link to="/services" className="inline-flex items-center text-white font-semibold hover:text-white transition-colors group">
+            <Link to="/service-page" className="inline-flex items-center text-white font-semibold hover:text-white transition-colors group border border-white  rounded-full p-3">
               Explore AI Services
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Link>

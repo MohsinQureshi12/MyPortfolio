@@ -2,7 +2,7 @@ import React from 'react';
 import { ArrowRight, Plus } from 'lucide-react';
 import bgImage from '../../../public/assets/image/servicesherosection.jpg';
 import { Link } from 'react-router-dom';
- 
+
 const ServiceHeroSection = () => {
     return (
         <div
@@ -25,25 +25,25 @@ const ServiceHeroSection = () => {
 
 
                     {/* Heading */}
-                    <h1 className="text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl lg:leading-[72px]">
-                        End-to-end engineering for the modern enterprise.
+                    <h1 className="lg:text-5xl text-lg font-bold leading-tight text-white  lg:leading-[60px]">
+                        Intelligent Digital Solutions Built for Global Businesses.
                     </h1>
 
 
                     {/* Description */}
                     <p className="mt-6 text-sm font-normal text-white md:text-base lg:text-lg">
-                        From product strategy to cloud operations, we deliver platforms engineered to international standards.                    </p>
+                        From AI-powered software and custom applications to cloud solutions and digital transformation, we build secure, scalable technology designed to help businesses innovate, automate, and grow.                  </p>
 
                 </div>
                 {/* CTA Button */}
                 <Link to={"/contact"}>
                     <button className="bg-white text-black mt-4 hover:bg-gray-50 px-6 py-3.5 rounded-lg font-bold text-sm flex items-center gap-2 transition-all group shadow-xl">
-                        Talk to an architect
+                        Talk to an Expert
                         <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                     </button>
                 </Link>
 
-               
+
 
             </div>
 

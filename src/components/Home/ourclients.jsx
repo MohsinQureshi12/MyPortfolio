@@ -28,10 +28,10 @@ const OurClients = () => {
           <h3 className="text-primary font-bold tracking-wider text-sm uppercase mb-4">
             Our Clients
           </h3>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-6 tracking-tight">
+          <h2 className="lg:text-3xl text-lg font-bold text-primary mb-6 tracking-tight">
             Trusted by Leading Organizations
           </h2>
-          <p className="text-gray-500 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-500 text-sm md:text-base max-w-3xl mx-auto leading-relaxed">
             Empowering government institutions, enterprises, educational organizations, security
             companies, logistics providers and growing businesses through innovative technology
             solutions.

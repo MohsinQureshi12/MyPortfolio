@@ -10,19 +10,19 @@ export function PortfolioproductComponent() {
                 {/* Header Section */}
                 <div className="mb-12">
                     <p className="text-primary font-bold text-sm uppercase tracking-wider mb-4">
-                        Products
+                        Our Products
                     </p>
                     <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6">
-                        <div className="lg:w-[70%]">
-                            <h1 className="text-4xl lg:text-[56px] leading-[1.1] font-bold text-gray-900 mb-4 tracking-tight">
-                                Production-ready platforms shipped from day one.
+                        <div className="lg:w-[50%]">
+                            <h1 className="lg:text-3xl text-lg leading-[1.1] font-bold text-gray-900 mb-4 tracking-tight">
+                                From Ideas to Intelligent Products That Scale.
                             </h1>
-                            <p className="text-lg text-gray-600">
-                                Live dashboards from real customer deployments.
+                            <p className="text-base text-gray-600">
+                               Discover innovative software and AI-powered products designed to simplify complex processes, enhance user experiences, and help businesses grow.
                             </p>
                         </div>
                         <Link to="/product-page" className="flex-shrink-0">
-                            <p className="flex gap-2 items-center mt-4 text-primary lg:justify-start justify-center text-base">
+                            <p className="flex gap-2 items-center mt-4 text-primary lg:justify-around justify-center text-base w-40 border border-primary rounded-full p-3">
                                 All products <ArrowRight size={18} />
                             </p>
                         </Link>

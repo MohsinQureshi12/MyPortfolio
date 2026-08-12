@@ -9,10 +9,10 @@ export function ChoseUsComponent() {
             <div className="container mx-auto max-w-7xl px-4">
                 {/* Header Section */}
                 <div className="mb-12 lg:mb-16">
-                    <p className="text-primary font-bold text-sm uppercase tracking-wider mb-4">
+                    <p className="text-primary font-bold text-sm uppercase tracking-wider mb-3">
                         WHY STREET CODER
                     </p>
-                    <h1 className="text-4xl lg:text-[48px] leading-[1.2] font-bold text-[#0f172a] max-w-2xl tracking-tight">
+                    <h1 className="lg:text-3xl text-lg leading-[1.2] font-bold text-[#0f172a] max-w-2xl tracking-tight">
                         Engineered to international standards.
                     </h1>
                 </div>

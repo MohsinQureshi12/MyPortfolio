@@ -1,5 +1,6 @@
 
 import logo from "../../../public/assets/image/Sclogo.svg";
+import { Link } from "react-router-dom";
 import {
   FaFacebook,
   FaInstagram,
@@ -23,12 +24,15 @@ const ContactDetailsPage = () => {
             <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
 
             <ul className="text-white mt-4 space-y-2">
-              {["Why Street Coders?", "Products", "Blog"].map((item, index) => (
+              {[
+                { name: "Why Street Coders?", path: "/about-page" },
+                { name: "Products", path: "/product-page" },
+              ].map((item, index) => (
                 <li
                   key={index}
                   className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
                 >
-                  {item}
+                  <Link to={item.path}>{item.name}</Link>
                   <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
                 </li>
               ))}
@@ -41,18 +45,18 @@ const ContactDetailsPage = () => {
 
             <ul className="text-white mt-4 space-y-2">
               {[
-                "Web Development",
-                "Mobile App Development",
-                "Web & Graphics Designing",
-                "SEO",
-                "Desktop Apps",
-                "Digital Marketing",
+                { name: "Web Development", path: "/service-page" },
+                { name: "Mobile App Development", path: "/service-page" },
+                { name: "Web & Graphics Designing", path: "/service-page" },
+                { name: "SEO", path: "/service-page" },
+                { name: "Desktop Apps", path: "/service-page" },
+                { name: "Digital Marketing", path: "/service-page" },
               ].map((item, index) => (
                 <li
                   key={index}
                   className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
                 >
-                  {item}
+                  <Link to={item.path}>{item.name}</Link>
                   <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
                 </li>
               ))}
@@ -63,17 +67,19 @@ const ContactDetailsPage = () => {
             <div className="h-[2px] bg-white w-24 sm:mx-auto md:mx-0"></div>
 
             <ul className="text-white mt-4 space-y-2">
-              {["Contact Us ", , "Apply for job", "Project Inquiry"].map(
-                (item, index) => (
-                  <li
-                    key={index}
-                    className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
-                  >
-                    {item}
-                    <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
-                  </li>
-                )
-              )}
+              {[
+                { name: "Contact Us", path: "/contact" },
+             
+                { name: "Project Inquiry", path: "/contact" },
+              ].map((item, index) => (
+                <li
+                  key={index}
+                  className="relative cursor-pointer transition-all duration-300 hover:text-gray-300 group pb-1 w-max"
+                >
+                  <Link to={item.path}>{item.name}</Link>
+                  <span className="absolute left-0 bottom-0 h-[2px] bg-white transition-all duration-300 w-0 group-hover:w-full"></span>
+                </li>
+              ))}
             </ul>
           </div>
           <div className=" ">

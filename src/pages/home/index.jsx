@@ -38,16 +38,15 @@ const Home = () => {
           <div className="container mx-auto flex min-h-screen items-start justify-center px-6 pt-28 md:items-center md:pt-0">
             <div className="max-w-4xl text-center">
               <p className="mb-4 text-xs font-medium text-white md:text-base bg-white/10 rounded-full p-2.5 inline-block ">
-                Trusted by Startups, Businesses & Growing Companies Worldwide
+                AI-Powered Solutions for Startups, Businesses & Enterprises
               </p>
 
-              <h1 className="text-2xl font-bold leading-tight text-white md:text-5xl lg:text-6xl lg:leading-[72px]">
-                Building Digital Solutions That Power Business Growth.
+              <h1 className="text-lg font-bold leading-tight text-white lg:text-5xl lg:leading-[60px]">
+                Building Intelligent Digital Solutions for a Smarter Future.
               </h1>
 
               <p className="mt-6 text-sm font-normal text-white md:text-base lg:text-lg">
-                we design and develop modern websites, scalable web applications, and custom software that help businesses grow faster. From startups to enterprises, we transform ideas into secure, high-performing digital products.
-              </p>
+                Street Coder is a global software development company delivering AI-powered software, custom web applications, intelligent automation, and scalable digital solutions. We help businesses across Australia, the UK, Pakistan, and beyond turn ideas into secure, high-performance products that drive growth.              </p>
 
               <div className="mt-8 flex flex-row justify-center gap-3">
                 <CommonBtn

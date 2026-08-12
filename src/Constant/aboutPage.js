@@ -6,40 +6,41 @@ import { FaRecycle, FaHistory } from "react-icons/fa";
 import { PiUsersThreeFill } from "react-icons/pi";
 
 export const AboutPageList = [
-  {
+   {
     id: 1,
-    title: "UI/UX Design",
-    desc: `We deliver web, mobile, and desktop software solutions tailored to your business processes across all verticals.`,
-    image: UIUX,
-  },
-  {
-    id: 2,
-    title: "Website Development",
-    desc: `We deliver high-fidelity software solutions for web, mobile, and  desktops mapped onto your unique business processes. We build, modernize, optimize and scale your business apps .`,
-    image: WebDev,
-  },
-  {
-    id: 3,
-    title: "AI Solution",
-    desc: `We develop pixel-perfect games with future-proof architecture and high resolution, using the latest technologies.`,
+    title: "AI & Machine Learning",
+    desc: `We build intelligent AI solutions, machine learning models, and automation systems that help businesses make smarter decisions, improve efficiency, and unlock new opportunities.`,
     image: GameDev,
   },
   {
+    id: 2,
+    title: "UI/UX Design",
+    desc: `We create intuitive, modern, and user-focused digital experiences that combine beautiful design with seamless usability across web and mobile platforms.`,
+    image: UIUX,
+  },
+  {
+    id: 3,
+    title: "Website Development",
+    desc: `We build fast, responsive, and scalable websites tailored to your business goals, from high-converting corporate websites to complex web platforms.`,
+    image: WebDev,
+  },
+ 
+  {
     id: 4,
-    title: "Mobile development",
-    desc: `We design solutions like smart contracts, DEXs, DeFi, NFTs, gamification, etc., based on blockchain technology.`,
+    title: "Mobile App Development",
+    desc: `We develop high-performance mobile applications with seamless user experiences, robust functionality, and scalable architecture for growing businesses.`,
     image: BlockChainDev,
   },
   {
     id: 5,
-    title: "Bussiness development",
-    desc: `We design solutions like smart contracts, DEXs, DeFi, NFTs, gamification, etc., based on blockchain technology.`,
+    title: "Business & Software Solutions",
+    desc: `We develop custom software that streamlines business operations, automates workflows, and solves complex challenges with technology built around your needs.`,
     image: BlockChainDev,
   },
   {
     id: 6,
-    title: "Digital marketing",
-    desc: `We design solutions like smart contracts, DEXs, DeFi, NFTs, gamification, etc., based on blockchain technology.`,
+    title: "Digital Marketing",
+    desc: `We help businesses grow online through data-driven SEO, content, social media, and digital marketing strategies designed to increase visibility and reach the right audience.`,
      image: UIUX,
   },
 ];
